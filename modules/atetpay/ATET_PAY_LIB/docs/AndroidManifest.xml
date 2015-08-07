@@ -1,0 +1,433 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atet.tcllauncher"
+    android:versionCode="104"
+    android:versionName="2.2.4" >
+
+    <uses-sdk android:minSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <!-- 修改系统设置的权限(输入法) -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- <uses-permission android:name="android.permission.MASTER_CLEAR" /> -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_TIME" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.atet.tcllauncher.app.BaseApplication"
+        android:clearTaskOnLaunch="true"
+        android:configChanges="fontScale|keyboardHidden|keyboard|orientation"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- com.atet.tcllauncher.control.start.BootChoiceActivity -->
+        <activity
+            android:name="com.atet.tcllauncher.control.start.BootChoiceActivity"
+            android:configChanges="fontScale|keyboardHidden|keyboard|orientation"
+            android:theme="@style/Theme.Start" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity android:name="com.atet.tcllauncher.home.activity.MarketMainActivity" />
+        <activity
+            android:name="com.atet.tcllauncher.home.activity.MainActivity"
+            android:configChanges="fontScale|keyboardHidden|keyboard|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Start" >
+            <intent-filter>
+                <action android:name="com.atet.tcllauncher.tcltvmarket.home.activity.action.MainActivity" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <!-- 开机启动activity -->
+        <activity
+            android:name="com.atet.tcllauncher.control.start.AccountActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Start" >
+            <intent-filter>
+                <action android:name="com.atet.tcllauncher.control.start.action.AccountActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.atet.tcllauncher.control.start.ConnBTActivity" />
+        <activity android:name="com.atet.tcllauncher.control.start.ConnSuccessActivity" />
+        <activity android:name="com.atet.tcllauncher.control.start.GuiderActivity" />
+        <activity android:name="com.atet.tcllauncher.control.start.LanguageSelectActivity" />
+        <activity android:name="com.atet.tcllauncher.control.start.VideoPlayActivity" />
+        <activity android:name="com.atet.tcllauncher.control.start.WelcomeActivity" />
+        <activity android:name="com.atet.tcllauncher.control.start.FestivalTipsActivity" />
+        <!-- 设置 -->
+        <activity android:name="com.atet.tcllauncher.control.setting.LanguageSettingActivity" />
+        <activity
+            android:name="com.atet.tcllauncher.control.setting.AccountManagerActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.atet.tcllauncher.control.setting.AccountRegisterActivity" />
+        <activity android:name="com.atet.tcllauncher.control.setting.AccountLoginActivity" />
+        <activity
+            android:name="com.atet.tcllauncher.control.start.DeviceIdActivity"
+            android:configChanges="fontScale|keyboardHidden|keyboard|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name="com.atet.tcllauncher.control.setting.FindPassWordActivity" />
+        <activity
+            android:name="com.atet.tcllauncher.control.setting.AccountRegisterNewActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.atet.tcllauncher.home.activity.NewsActivity" >
+            <intent-filter>
+                <action android:name="com.atet.tcllauncher.NOTICES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.atet.tcllauncher.home.activity.NewsDetailActivity" />
+        <activity android:name="com.atet.tcllauncher.control.setting.AccountInfoUpdateActivty" />
+        <activity android:name="com.atet.tcllauncher.control.setting.VoiceCtrActivity" />
+        <activity android:name="com.atet.tcllauncher.control.setting.StoragerActivity" />
+        <activity android:name="com.atet.tcllauncher.control.setting.UpdateActivity" />
+        <activity android:name="com.atet.tcllauncher.control.setting.SystemInfoActivity" />
+        <activity android:name="com.atet.tcllauncher.control.setting.GameClassifyActivity" />
+        <activity android:name="com.atet.tcllauncher.control.setting.WaitActivity" />
+        <activity android:name="com.atet.tcllauncher.control.setting.ConfirmPasswordActivity" />
+        <activity android:name="com.atet.tcllauncher.home.activity.TestActivity" />
+        <activity android:name="com.atet.tcllauncher.home.activity.ShowReceivedGiftActivity" />
+        <activity android:name="com.atet.tcllauncher.home.activity.GiftDetailActivity" />
+        <activity android:name="com.atet.tcllauncher.home.activity.GiftPacksActivity" >
+            <intent-filter>
+                <action android:name="com.atet.tcllauncher.home.activity.GiftPacksActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atet.tcllauncher.control.land.activity.RecommendGameActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.atet.tcllauncher.control.land.activity.LandGameClassifyActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="com.atet.tcllauncher.GAMECLASSIFY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atet.tcllauncher.control.manage.activity.AddAppActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.atet.tcllauncher.home.fragment.GameDetailActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="com.atet.tcllauncher.GameDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.atet.tcllauncher.control.setting.VideoTutorActivity"
+             android:configChanges="fontScale|keyboardHidden|keyboard|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Start" />
+        <activity
+            android:name="com.atet.tcllauncher.shop.activity.PlayVideoActivity"
+            android:configChanges="fontScale|keyboardHidden|keyboard|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Start" />
+        <activity
+            android:name="com.atet.tcllauncher.home.activity.LauncherSearchResultActivity"
+            android:configChanges="keyboardHidden|keyboard|orientation"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <activity
+            android:name="com.atet.tcllauncher.shop.activity.GamePadShopActivity"
+            android:configChanges="fontScale|keyboardHidden|keyboard|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Start" >
+            <intent-filter>
+                <action android:name="com.atet.tcllauncher.GamePadShopActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.atet.tcllauncher.shop.activity.FullScreenShowActivity"
+            android:configChanges="fontScale|keyboardHidden|keyboard|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Start" >
+            <intent-filter>
+                <action android:name="com.atet.tcllauncher.FullScreenShowActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.atet.tcllauncher.home.activity.DateAutoSettingActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        
+        <activity
+            android:name="com.atet.tcllauncher.control.land.activity.LandPlayVideoActivity"
+            android:configChanges="fontScale|keyboardHidden|keyboard|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Start" />
+        
+        <activity 
+            android:name="com.atet.tcllauncher.control.setting.GamepadConnectActivity"
+            android:configChanges="fontScale|keyboardHidden|keyboard|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Start" ></activity>
+        
+        <activity 
+            android:name="com.atet.tcllauncher.control.setting.GamepadChoiceActivity"
+            android:configChanges="fontScale|keyboardHidden|keyboard|orientation|layoutDirection"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Start"></activity>
+
+        <!-- <activity android:name="com.sxhl.tcltvmarket.home.activity.PrivacyResetActivity" /> -->
+
+        <provider
+            android:name="com.atet.tcllauncher.contentprovider.MyGameProvider"
+            android:authorities="com.atet.tcllauncher.provider" />
+
+        <!--
+        <receiver android:name="com.sxhl.tcltvmarket.receiver.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        -->
+        <service android:name="com.atet.tcllauncher.service.PregameService" />
+
+        <receiver android:name="com.atet.tcllauncher.receiver.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.atet.tcllauncher.action.alarm" />
+                 <action android:name="com.atet.tcllauncher.action.giftpkgupdatealarm" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.atet.tcllauncher.receiver.BReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.atet.tcllauncher.launcher_main" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <!--
+                 <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+            </intent-filter>
+            -->
+        </receiver>
+         <receiver android:name="com.atet.tcllauncher.receiver.DataAlarmReceiver"
+                  >
+            <intent-filter >
+                <action android:name="com.atet.tcllauncher.receiver.dataalarm"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.atet.tcllauncher.receiver.StartDataServiceReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.atet.tcllauncher.receiver.InstallReceiver">
+             <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.atet.tcllauncher.receiver.GameDownloadReceiver">
+            <intent-filter >
+                <action android:name="com.atet.tcllauncher.onDownloadStart"/>
+                <action android:name="com.atet.tcllauncher.onDownloadProgress"/>
+                <action android:name="com.atet.tcllauncher.onDownloadFinish"/>
+                <action android:name="com.atet.tcllauncher.onDownloadError"/>
+                <action android:name="com.atet.tcllauncher.onDownloadWait"/>
+                <action android:name="com.atet.tcllauncher.onDownloadSize"/>
+                <action android:name="com.atet.tcllauncher.onDownloadStop"/>
+                <action android:name="com.atet.tcllauncher.onDownloadCompleted"/>
+                <action android:name="com.atet.tcllauncher.app_installed"/>
+                <action android:name="com.atet.tcllauncher.app_downloaded"/>
+                
+            </intent-filter>
+        </receiver>
+        
+        <!-- <service android:name=".service.ControllerService" /> -->
+        <service android:name="com.atet.tcllauncher.service.UpdateApkService" ></service>
+        <service android:name=".service.DownloadService" >
+        </service>
+        <service android:name=".service.ConnBTService" >
+        </service>
+        
+        <receiver android:name="com.sxhl.statistics.receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.atet.tcllauncher.service.GiftUpdateService" >
+        </service>
+         <service android:name="com.sxhl.statistics.services.UploadPlatFormTimeInfoService" >
+        </service>
+        <service android:name="com.sxhl.statistics.services.UploadGameOnlineService" >
+        </service>
+        <service android:name="com.sxhl.statistics.services.GameCollectService" >
+        </service>
+        <service android:name="com.sxhl.statistics.services.PlatFormOnlineService" >
+        </service>
+        <service android:name="com.sxhl.statistics.services.StatisticsGameOnlineService" >
+        </service>
+        <service android:name="com.sxhl.statistics.services.UpdateHardwareService">
+        </service>
+        <service android:name="com.atet.tcllauncher.service.SynchronousService">
+            <intent-filter >
+                <action android:name="com.atet.tcllauncher.setvice.SynchronousService"/>
+            </intent-filter>
+            
+        </service>
+        
+          <!-- 支付相关sdk -->
+      
+       <activity
+            android:name="com.atet.api.pay.ui.phone.activity.MainActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+            android:label="AtetPayMobile"
+		    android:configChanges="keyboard|keyboardHidden"
+		    android:screenOrientation="sensor"
+            android:logo="@drawable/actionbar_back_btn_selector" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.phone.activity.CustomerServiceActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+		    android:configChanges="keyboard|keyboardHidden"
+		    android:screenOrientation="sensor"
+		    android:logo="@drawable/actionbar_back_btn_selector" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.phone.activity.PhoneNumberManagerActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+		    android:configChanges="keyboard|keyboardHidden"
+		    android:screenOrientation="sensor"
+		    android:logo="@drawable/actionbar_back_btn_selector" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.tv.activity.MainActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="AtetPayTv"
+		    android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+		<activity
+            android:name="com.atet.api.pay.ui.tv.activity.BindBankCardActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+	    	android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+	        android:theme="@style/transparent_activity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.InitActivity"
+		    android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+        
+        <!-- 登录相关 -->
+        <activity android:name="com.atet.api.pay.ui.tv.login.AccountLoginActivity" 
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.atet.api.pay.ui.tv.login.AccountInfoUpdateActivty"
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.atet.api.pay.ui.tv.login.AccountRegisterActivity"
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.atet.api.pay.ui.tv.login.FindPassWordActivity"
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>  
+        	
+        <!-- 支付宝 -->
+		<activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <service
+            android:name="com.atet.api.pay.ui.service.AtetPayService">
+            <intent-filter>
+                <action android:name="com.atet.api.pay.ui.service.IAtetPayService" />
+            </intent-filter>
+        </service>
+        
+    </application>
+
+</manifest>

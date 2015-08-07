@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/common_bg">
+
+    <include layout="@layout/layout_common_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_detai_comm"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <RelativeLayout
+            android:id="@+id/layoutClearBuffer"
+            style="@style/user_center_layout_style"
+            android:background="@drawable/lay_user_center_selector1" >
+
+             <TextView
+                        style="@style/user_center_text_style"
+                        android:text="@string/user_clear_cache" />
+        </RelativeLayout>
+
+       <RelativeLayout 
+           style="@style/user_center_layout_style"
+           android:background="@drawable/lay_user_center_selector3">
+          <TextView
+                        style="@style/user_center_text_style"
+                        android:text="@string/user_allow_3g_download" />
+           <CheckBox 
+            android:id="@+id/chkWifi"   
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            android:paddingLeft="2dp"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableRight="@drawable/chkbox_web_selector"
+            android:layout_gravity="right"/>
+        </RelativeLayout>  
+        
+        <RelativeLayout 
+           style="@style/user_center_layout_style"
+           android:background="@drawable/lay_user_center_selector3">
+          <TextView
+                        style="@style/user_center_text_style"
+                        android:text="@string/user_delete_zip_after_installed" />
+           <CheckBox 
+            android:id="@+id/chkDelZip"   
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="5dp"
+            android:paddingLeft="2dp"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableRight="@drawable/chkbox_web_selector"
+            android:layout_gravity="right"/>
+        </RelativeLayout>  
+    </LinearLayout>
+</LinearLayout>

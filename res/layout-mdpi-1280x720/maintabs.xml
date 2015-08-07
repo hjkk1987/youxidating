@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:paddingBottom="35dp" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_main_tab"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_but_game_zone"
+                style="@style/main_tab_bottom_720x1280_mdpi"
+                android:checked="true"
+                android:drawableTop="@drawable/btn_main_tab_game_selector"
+                android:text="@string/main_game_zone" />
+
+            <RadioButton
+                android:id="@+id/radio_but_square"
+                style="@style/main_tab_bottom_720x1280_mdpi"
+                android:drawableTop="@drawable/btn_main_tab_square_selector"
+                android:text="@string/main_square" />
+
+            <com.sxhl.market.view.MyRadioButton
+                android:id="@+id/radio_but_manage"
+                style="@style/main_tab_bottom_720x1280_mdpi"
+                android:drawableTop="@drawable/btn_main_tab_manage_selector"
+                android:text="@string/main_manage_game" >
+            </com.sxhl.market.view.MyRadioButton>
+
+            <com.sxhl.market.view.MyRadioButton
+                android:id="@+id/radio_but_user_center"
+                style="@style/main_tab_bottom_720x1280_mdpi"
+                android:drawableTop="@drawable/btn_main_tab_user_selector"
+                android:text="@string/main_user_center" >
+            </com.sxhl.market.view.MyRadioButton>
+        </RadioGroup>
+    </FrameLayout>
+
+</TabHost>

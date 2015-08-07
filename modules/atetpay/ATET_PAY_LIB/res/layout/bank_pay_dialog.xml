@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/bank_pay_fragment_dialog_w"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bind_bank_card_dialog_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/bank_pay_fragment_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+            android:background="@drawable/bank_pay_fragment_btn_bg_nor"
+            android:orientation="vertical"
+            android:padding="@dimen/bank_pay_fragment_padding" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应付金额"
+                    android:textColor="@color/main_activity_rbtn_text_color"
+                    android:textSize="@dimen/payfont1" />
+
+                <TextView
+                    android:id="@+id/bind_bank_card_dialog_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="￥88.88"
+                    android:textColor="@color/main_activity_rbtn_text_color"
+                    android:textSize="@dimen/payfont1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/bind_bank_card_dialog_tv_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邮政储蓄借记卡"
+                    android:textColor="@color/main_activity_rbtn_text_color"
+                    android:textSize="@dimen/payfont1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/bind_bank_card_dialog_tv_bank_card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6222 2223 2223 2222"
+                    android:textColor="@color/main_activity_rbtn_text_color"
+                    android:textSize="@dimen/payfont1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bind_bank_card_dialog_lin_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/bind_bank_card_dialog_et_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+                android:layout_weight="1"
+                android:background="@drawable/bank_pay_fragment_et_selector"
+                android:drawableLeft="@drawable/bank_card_dialog_icon_name"
+                android:drawablePadding="@dimen/bind_bank_card_dialog_et_drawable_padding"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="left|center"
+                android:hint="@string/bind_bank_card_dialog_et_name_hint_string"
+                android:maxLength="15"
+                android:paddingLeft="@dimen/main_activity_tab_tv_title_margin_left"
+                android:singleLine="true"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textCursorDrawable="@drawable/common_edittext_cousor"
+                android:textSize="@dimen/payfont3" />
+            <EditText
+                android:id="@+id/bind_bank_card_dialog_et_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/phone_pay_fragment_margin_left"
+                android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+                android:layout_weight="1"
+                android:background="@drawable/bank_pay_fragment_et_selector"
+                android:digits="0123456789xX"
+                android:drawableLeft="@drawable/bank_card_dialog_icon_id"
+                android:drawablePadding="@dimen/bind_bank_card_dialog_et_drawable_padding"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="left|center"
+                android:hint="@string/bind_bank_card_dialog_et_id_hint_string"
+                android:maxLength="18"
+                android:paddingLeft="@dimen/main_activity_tab_tv_title_margin_left"
+                android:singleLine="true"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textCursorDrawable="@drawable/common_edittext_cousor"
+                android:textSize="@dimen/payfont3" />
+
+　　　　
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bind_bank_card_dialog_lin_creadit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+　　　　    
+
+            <EditText
+                android:id="@+id/bind_bank_card_dialog_et_phone_credit_life"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+                android:layout_weight="1"
+                android:background="@drawable/bank_pay_fragment_et_selector"
+                android:drawableLeft="@drawable/bank_card_dialog_icon_life"
+                android:drawablePadding="@dimen/bind_bank_card_dialog_et_drawable_padding"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/bind_bank_card_dialog_et_phone_credit_life_hint_string"  
+                android:digits="0123456789"
+                android:maxLength="4"
+                android:paddingLeft="@dimen/main_activity_tab_tv_title_margin_left"
+                android:singleLine="true"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textCursorDrawable="@drawable/common_edittext_cousor"
+                android:textSize="@dimen/payfont3" />
+
+　　　　     
+
+            <EditText
+                android:id="@+id/bind_bank_card_dialog_et_phone_credit_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/phone_pay_fragment_margin_left"
+                android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+                android:layout_weight="1"
+                android:background="@drawable/bank_pay_fragment_et_selector"
+                android:drawableLeft="@drawable/bank_card_dialog_icon_back"
+                android:drawablePadding="@dimen/bind_bank_card_dialog_et_drawable_padding"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/bind_bank_card_dialog_et_phone_credit_number_hint_string"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingLeft="@dimen/main_activity_tab_tv_title_margin_left"
+                android:singleLine="true"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textCursorDrawable="@drawable/common_edittext_cousor"
+                android:textSize="@dimen/payfont3" />
+
+　　　　
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/bind_bank_card_dialog_et_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+            android:background="@drawable/bank_pay_fragment_et_selector"
+            android:drawableLeft="@drawable/bank_card_dialog_icon_phone"
+            android:drawablePadding="@dimen/bind_bank_card_dialog_et_drawable_padding"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/bind_bank_card_dialog_et_phone_hint_string"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/main_activity_tab_tv_title_margin_left"
+            android:singleLine="true"
+            android:textColor="@color/main_activity_rbtn_text_color"
+            android:textCursorDrawable="@drawable/common_edittext_cousor"
+            android:textSize="@dimen/payfont3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+        android:orientation="horizontal" >
+
+        <com.atet.api.pay.ui.tv.customview.DrawableCenterButton
+        	android:id="@+id/bind_bank_card_dialog_btn_get_check_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bank_pay_fragment_btn_selector"
+            android:drawableLeft="@drawable/bank_card_dialog_icon_check_code"
+            android:drawablePadding="@dimen/bind_bank_card_dialog_et_drawable_padding"
+            android:gravity="left|center"
+            android:text="@string/bind_bank_card_dialog_btn_check_code_string"
+            android:textColor="@color/main_activity_rbtn_text_color"
+            android:textSize="@dimen/payfont3" />
+
+            <EditText
+                android:id="@+id/bind_bank_card_dialog_et_check_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/phone_pay_fragment_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/bank_pay_fragment_et_selector"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/bind_bank_card_dialog_et_check_code_hint_string"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="@dimen/bind_bank_card_dialog_et_check_code_padding_left"
+                android:singleLine="true"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textCursorDrawable="@drawable/common_edittext_cousor"
+                android:textSize="@dimen/payfont3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/bind_bank_card_dialog_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="true" >
+            </CheckBox>
+
+            <Button
+                android:id="@+id/bank_pay_fragment_tv_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/main_activity_tab_tv_title_margin_left"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textSize="@dimen/payfont3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bind_bank_card_dialog_btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bank_pay_fragment_btn_selector"
+                android:text="@string/bind_bank_card_dialog_btn_confirm"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textSize="@dimen/payfont1" />
+
+            <Button
+                android:id="@+id/bind_bank_card_dialog_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/phone_pay_fragment_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/bank_pay_fragment_btn_selector"
+                android:text="@string/bind_bank_card_dialog_btn_cancle"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textSize="@dimen/payfont1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

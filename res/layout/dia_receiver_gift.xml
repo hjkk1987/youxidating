@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/kindly_reminder"
+        android:textColor="#535353"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_dia_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="#34d0ea" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_result_receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="TextView"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_dia_gift_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_hint_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_dia_gift_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_dia_copy_gift_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/gift_btn_blue_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/gift_copy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_dia_btns_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/dia_suc_btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dia_reveive_success_close_btn_bg_selector"
+            android:text="@string/close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_dia_btns_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/dia_btn_try_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dia_receive_fail_again_btn_bg_selector"
+            android:text="@string/gift_receive_again" />
+
+        <Button
+            android:id="@+id/dia_fail_btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/dia_reveive_fail_close_btn_bg_selector"
+            android:text="@string/close" />
+    </LinearLayout>
+
+</LinearLayout>

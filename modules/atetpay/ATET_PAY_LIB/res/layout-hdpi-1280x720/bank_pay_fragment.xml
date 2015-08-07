@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/atet_tv_pay_fragment_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/phone_pay_fragment_margin_left"
+        android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+        android:orientation="horizontal"
+        android:padding="@dimen/bank_pay_fragment_padding" >
+
+        <ImageView
+            android:id="@+id/bank_pay_fragment_iv_product_icon1"
+            android:layout_width="@dimen/tv_bank_pay_fragment_game_icon_w_h"
+            android:layout_height="@dimen/tv_bank_pay_fragment_game_icon_w_h"
+            android:layout_gravity="bottom"
+            android:src="@drawable/game_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/phone_pay_fragment_iv_title_margin_top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bank_pay_fragment_tv_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bank_pay_fragment_tv_product_string"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textSize="@dimen/payfont3" />
+
+            <TextView
+                android:id="@+id/bank_pay_fragment_tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bank_pay_fragment_margin_top"
+                android:text="极品飞车"
+                android:ems="9"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textSize="@dimen/payfont1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/bank_pay_fragment_tv_product_price"
+                android:layout_width="@dimen/tv_bank_pay_fragment_privce_bg_w"
+                android:layout_height="@dimen/tv_bank_pay_fragment_privce_bg_h"
+                android:layout_marginBottom="@dimen/bank_pay_fragment_tv_product_price_margin_bottom"
+                android:background="@drawable/bank_pay_fragment_price_bg"
+                android:gravity="center"
+                android:paddingLeft="48dp"
+                android:text="11.01"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textSize="@dimen/payfontpirce"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+ 
+    <!--bind bankcard start -->
+    <LinearLayout
+        android:id="@+id/bank_pay_fragment_lin_unbind"
+        android:layout_width="match_parent"
+         android:layout_height="@dimen/bank_pay_fragment_lin_h"
+        android:layout_marginTop="60dp"
+        android:visibility="visible"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:paddingLeft="@dimen/unicom_pay_fragment_margin_left"
+            android:paddingRight="@dimen/unicom_pay_fragment_margin_left"
+            android:orientation="horizontal" >
+            <ImageView 
+                android:layout_width="@dimen/unicom_pay_fragment_phone_icon_w_h"
+                android:layout_height="@dimen/unicom_pay_fragment_phone_icon_w_h"
+                android:src="@drawable/bank_pay_fragment_tv_unbind_icon"
+                 android:gravity="left|bottom"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textSize="@dimen/payfont3"
+                android:text="已绑定银行卡号:" />
+
+            <TextView
+               android:id="@+id/bank_pay_fragment_tv_bankcard_num"  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                  android:gravity="left|center"
+                android:textColor="@color/main_activity_rbtn_text_color"
+                android:textSize="@dimen/payfont3"
+                android:text="136918333664"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/unicom_pay_fragment_margin_left"
+            android:paddingRight="@dimen/unicom_pay_fragment_margin_left"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bank_pay_fragment_btn_confirm_pay"  
+                android:layout_width="0dp"
+               android:layout_height="@dimen/bank_pay_fragment_dedt_bank_card_h"
+                android:layout_weight="1"
+                android:background="@drawable/bank_pay_fragment_btn_selector"
+                android:text="确认支付"
+                android:textColor="@color/main_activity_radiogbtn_text_select_color"
+                android:textSize="@dimen/payfont2" />
+
+            <Button
+                 android:id="@+id/bank_pay_fragment_btn_unbind" 
+                android:layout_width="0dp"
+               android:layout_height="@dimen/bank_pay_fragment_dedt_bank_card_h"
+                android:layout_weight="1"
+                android:background="@drawable/bank_pay_fragment_btn_selector"
+                android:text="解除绑定"
+                 android:layout_marginLeft="64dp"
+                android:textColor="@color/main_activity_radiogbtn_text_select_color"
+                android:textSize="@dimen/payfont2" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- end  -->
+    
+    
+    <LinearLayout
+         android:id="@+id/bank_pay_fragment_lin_add_bankcard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bank_pay_fragment_lin_h"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+        <com.atet.api.pay.ui.tv.customview.DivisionEditText
+            android:id="@+id/bank_pay_fragment_dedt_bank_card"
+            android:layout_width="300dp"
+            android:layout_height="@dimen/bank_pay_fragment_dedt_bank_card_h"
+            android:background="@drawable/bank_pay_fragment_et_selector"
+            android:digits="0123456789 "
+            android:hint="@string/bank_pay_fragment_dedt_bank_card_tip_string"
+            android:maxLength="27"
+             
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/bank_pay_fragment_dedt_bank_card_padding_left"
+            android:textColor="@color/main_activity_rbtn_text_color"
+            android:textCursorDrawable="@drawable/common_edittext_cousor"
+            android:textSize="@dimen/payfont1"
+              >
+        </com.atet.api.pay.ui.tv.customview.DivisionEditText>
+       
+        <Button
+            android:id="@+id/bank_pay_fragment_btn_add_bank_card_sure"
+            android:layout_width="@dimen/bank_pay_fragment_btn_add_bank_card_sure_w"
+            android:layout_height="@dimen/bank_pay_fragment_btn_add_bank_card_sure_h"
+            android:layout_marginLeft="@dimen/bank_pay_fragment_margin_left"
+            android:background="@drawable/bank_pay_fragment_btn_selector"
+            android:text="@string/bank_pay_fragment_btn_add_bank_card_sure_string"
+            android:textColor="@color/main_activity_rbtn_text_color"
+            android:textSize="@dimen/payfont1"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bank_pay_fragment_margin_left"
+        android:layout_marginTop="@dimen/bank_pay_fragment_btn_add_bank_card_tip_margin_top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/bank_pay_fragment_margin_left"
+            android:text="@string/bank_pay_fragment_btn_add_bank_card_tip_string"
+            android:textColor="@color/main_activity_rbtn_text_color"
+            android:textSize="@dimen/payfont8" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+     	android:layout_height="@dimen/bank_pay_fragment_bottom_bank_h"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/bank_pay_fragment_margin_left"
+        android:layout_marginBottom="@dimen/bank_pay_fragment_margin_left"
+        android:layout_marginLeft="@dimen/bank_pay_fragment_margin_left"
+        android:layout_marginRight="@dimen/bank_pay_fragment_margin_left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bank_pay_fragment_bottom_phone_h"
+            android:layout_gravity="center"
+            android:src="@drawable/phone_pay_fragment_tv_bottom_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/bank_pay_fragment_drawable_padding"
+            android:text="@string/phone_pay_fragment_tv_custom_service_tip"
+            android:textColor="@color/main_activity_rbtn_text_color"
+            android:textSize="@dimen/payfont7" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone_pay_fragment_tv_bottom" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlayCommItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp" >
+
+    <ImageView
+        android:id="@+id/imgCommAvatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="3dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/minphoto" />
+
+    <TextView
+        android:id="@+id/tvCommUserName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/imgCommAvatar"
+        android:textColor="@color/color4"
+        android:textSize="@dimen/font2" />
+
+    <TextView
+        android:id="@+id/tvCommDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tvCommUserName"
+        android:gravity="right"
+        android:paddingRight="10dp"
+        android:textColor="@color/color5"
+        android:textSize="@dimen/font3" />
+
+    <TextView
+        android:id="@+id/tvCommentWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCommUserName"
+        android:layout_toRightOf="@id/imgCommAvatar"
+        android:paddingTop="3dp"
+        android:textColor="@color/color4"
+        android:textSize="@dimen/font2" />
+
+</RelativeLayout>

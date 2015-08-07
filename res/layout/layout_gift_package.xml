@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_common_header" />
+	
+    
+    <RadioGroup
+        android:id="@+id/gift_pkg_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/gift_pkg_radioBtn_center"
+            style="@style/game_zone_btn_style"
+            android:background="@drawable/btn_game_zone_left_selector"
+            android:checked="true"
+            android:text="@string/gift_center" />
+
+        <RadioButton
+            android:id="@+id/gift_pkg_radioBtn_mygift"
+            style="@style/game_zone_btn_style"
+            android:background="@drawable/btn_game_zone_right_selector"
+            android:text="@string/gift_mygift" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/manage_radioGroup"
+        android:orientation="horizontal" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vPager_gift_package"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:id="@+id/gift_linearlayout_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/gift_proBar_loading"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/gift_tv_loading_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manage_loading" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

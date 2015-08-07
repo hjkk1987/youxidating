@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atet.api"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- bank -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- sms pay -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_atet"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+		<activity
+            android:name="com.atet.api.pay.ui.phone.activity.MainActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+            android:label="AtetPayMobile"
+		    android:configChanges="keyboard|keyboardHidden"
+		    android:screenOrientation="sensor"
+            android:logo="@drawable/actionbar_back_btn_selector" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.phone.activity.CustomerServiceActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+		    android:configChanges="keyboard|keyboardHidden"
+		    android:screenOrientation="sensor"
+		    android:logo="@drawable/actionbar_back_btn_selector" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.phone.activity.PhoneNumberManagerActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+		    android:configChanges="keyboard|keyboardHidden"
+		    android:screenOrientation="sensor"
+		    android:logo="@drawable/actionbar_back_btn_selector" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.tv.activity.MainActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="AtetPayTv"
+		    android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+		<activity
+            android:name="com.atet.api.pay.ui.tv.activity.BindBankCardActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+	    	android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+	        android:theme="@style/transparent_activity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.InitActivity"
+		    android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+        
+        <!-- 登录相关 -->
+        <activity android:name="com.atet.api.pay.ui.tv.login.AccountLoginActivity" 
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.atet.api.pay.ui.tv.login.AccountInfoUpdateActivty"
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.atet.api.pay.ui.tv.login.AccountRegisterActivity"
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.atet.api.pay.ui.tv.login.FindPassWordActivity"
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>  
+        	
+        <!-- 支付宝 -->
+		<activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <service
+            android:name="com.atet.api.pay.ui.service.AtetPayService">
+            <intent-filter>
+                <action android:name="com.atet.api.pay.ui.service.IAtetPayService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

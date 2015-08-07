@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/phone_number_manager_fragment_layout_padding" >
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/phonenumber_manager_activity_tv_username_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联通帐号:"
+            android:textSize="@dimen/payfont10" />
+
+        <TextView
+            android:id="@+id/phonenumber_manager_activity_tv_username_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/phone_number_manager_fragment_tv_marginleft"
+            android:text="huajianlei"
+            android:textSize="@dimen/payfont11" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/phonenumber_manager_activity_tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:drawableTop="@drawable/phone_number_manager_tv_icon"
+                android:gravity="left"
+                android:text="请绑定本人联通手机号，绑定后可用于支付。"
+                android:textSize="@dimen/payfont10" />
+
+            <com.atet.api.pay.ui.phone.customview.CustomEditText
+                android:id="@+id/phonenumber_manager_activity_pnonenumber_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:hint="1111111111111"
+                android:paddingLeft="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/phone_number_manager_fragment_tv_margintop"
+                android:orientation="horizontal" >
+
+                <com.atet.api.pay.ui.phone.customview.CustomEditText
+                    android:id="@+id/phonenumber_manager_activity_custom_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="1111111111111"
+                    android:paddingLeft="10dp" />
+
+                <Button
+                    android:id="@+id/phonenumber_manager_activity_btn_countdown"
+                    android:layout_width="@dimen/phonenumber_manager_activity_btn_countdown_w"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/phone_number_manager_fragment_tv_marginleft"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/common_btn_selector"
+                    android:text="获取验证码" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/phonenumber_manager_activity_btn_get_check_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="@dimen/phone_number_manager_fragment_tv_margintop"
+                android:background="@drawable/common_btn_selector"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="绑定手机" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

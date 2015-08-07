@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <ListView
+    	android:id="@+id/game_lv_gameTopic"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_marginTop="28dp"
+    	android:layout_marginBottom="58dp"
+    	android:layout_marginLeft="0dp"
+    	android:layout_marginRight="0dp"
+    	android:listSelector="#00000000"
+    	android:cacheColorHint="#00000000"
+    >
+    
+    </ListView> 
+</RelativeLayout>

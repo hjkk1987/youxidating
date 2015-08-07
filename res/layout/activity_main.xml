@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/hello_world"
+        tools:context=".MainActivity" />
+	<Button 
+	    android:id="@+id/btn"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="点击button"
+	    />
+	<Button 
+	    android:id="@+id/showGameDetail"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="游戏专题详细"
+	    />
+	
+</LinearLayout>

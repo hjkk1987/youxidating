@@ -1,0 +1,43 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+ 
+    <style name="atet_pay_keyboard_btn_style">
+        <item name="android:layout_width">112dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/atet_pay_keyboard_btn_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/payfont5</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+   
+    <style name="atet_pay_keyboard_btn_style1">
+        <item name="android:layout_width">234dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+         <item name="android:focusableInTouchMode">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/atet_pay_keyboard_btn_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/payfont5</item>
+        <item name="android:textColor">#ffffff</item>
+         <item name="android:layout_marginBottom">20dp</item>
+    </style>
+     <style name="atet_pay_keyboard_btn_style_del">
+        <item name="android:layout_width">112dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+         <item name="android:focusableInTouchMode">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/atet_pay_keyboard_del_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/payfont5</item>
+        <item name="android:textColor">#ffffff</item>
+    </style> 
+    
+</resources>

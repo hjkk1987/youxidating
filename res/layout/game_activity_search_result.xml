@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_head_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/game_imgBtn_sRBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/common_head_btn_selector"
+            android:src="@drawable/common_head_back"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/game_imgBtn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/common_head_btn_selector"
+            android:src="@drawable/common_head_search"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/game_et_resultsearch"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/game_imgBtn_search"
+            android:layout_toRightOf="@id/game_imgBtn_sRBack"
+            android:background="@drawable/search_input_normal"
+            android:ems="10"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="33dp"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/font1" />
+
+        <ImageButton
+            android:id="@+id/game_imgBtn_DeleteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/game_et_resultsearch"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_result_btn_delete" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/game_tv_Tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:textColor="#FF827e7e"
+        android:textSize="16sp" />
+
+<!--     <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/listview_divider" /> -->
+
+<!--     <com.sxhl.market.view.PullDownView
+        android:id="@+id/pullDownView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+    </com.sxhl.market.view.PullDownView> -->
+    
+    <LinearLayout
+        android:id="@+id/game_liearLayout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+
+</LinearLayout>

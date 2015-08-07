@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg" >
+
+    <include
+        android:id="@+id/common_header"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_common_header" />
+
+    <RadioGroup
+        android:id="@+id/manage_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/common_header"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/manage_radioBtn_mygame"
+            style="@style/game_zone_btn_style"
+            android:background="@drawable/btn_game_zone_left_selector"
+            android:checked="true"
+            android:text="@string/manage_mygame" />
+
+        <RadioButton
+            android:id="@+id/manage_radioBtn_collection"
+            style="@style/game_zone_btn_style"
+            android:background="@drawable/btn_game_zone_right_selector"
+            android:text="@string/manage_collection" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/manage_radioGroup" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vPager_mygame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:layout_marginBottom="15dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/manage_linearlayout_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/manage_proBar_loading"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/manage_tv_loading_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manage_loading" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

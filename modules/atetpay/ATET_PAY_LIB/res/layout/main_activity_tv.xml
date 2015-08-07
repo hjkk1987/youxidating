@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/main_activity_tv_bg_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/main_activity_margin_top"
+              >
+
+            <ImageView
+                android:id="@+id/main_activity_tab_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tv_main_activity_title_h"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/tv_main_activity_tab_tv_title"
+                android:textSize="@dimen/payfont4" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/main_activity_tab_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+  <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+            </View>
+            <com.atet.api.pay.ui.tv.customview.DrawableCenterRadioButton
+                android:id="@+id/main_activity_tab_bank_card"
+                style="@style/main_activity_radiobtn_style_tv"
+                android:drawableLeft="@drawable/tv_main_activity_tab_bank_card"
+               
+                android:text="@string/main_activity_tab_bank_card_string" />
+
+            <com.atet.api.pay.ui.tv.customview.DrawableCenterRadioButton
+                android:id="@+id/main_activity_tab_phone_pay"
+                style="@style/main_activity_radiobtn_style_tv"
+                              
+                android:drawableLeft="@drawable/tv_main_activity_tab_phone_pay"
+                android:text="@string/main_activity_tab_phone_pay_string" />
+
+            <com.atet.api.pay.ui.tv.customview.DrawableCenterRadioButton
+                android:id="@+id/main_activity_tab_unicom_pay"
+                style="@style/main_activity_radiobtn_style_tv"
+                android:drawableLeft="@drawable/tv_main_activity_tab_unicom_pay"
+                android:text="@string/main_activity_tab_unicom_pay_string" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+            </View>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tv_main_activity_bottom_h"
+                 android:layout_marginBottom="@dimen/bank_pay_fragment_margin_left"
+                android:src="@drawable/tv_main_activity_tab_iv_bottom" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_activity_pay_detail_fragment"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+</LinearLayout>

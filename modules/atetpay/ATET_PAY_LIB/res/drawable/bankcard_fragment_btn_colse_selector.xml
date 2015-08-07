@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 指定获得焦点时的颜色 -->
+   <!--  <item android:drawable="@drawable/account_btn_press" android:state_enabled="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/account_btn_focus" android:state_enabled="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/account_btn_normal" android:state_enabled="false" android:state_focused="false"/>
+    <item android:drawable="@drawable/account_btn_normal"/> -->
+    
+    <item android:drawable="@drawable/bankcard_fragment_btn_close_down" android:state_enabled="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/bankcard_fragment_btn_close_down" android:state_enabled="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/bankcard_fragment_btn_close"/>
+
+</selector>

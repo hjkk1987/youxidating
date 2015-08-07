@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- phone   -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+        <!-- phone   -->
+     <string name="str_checkversiontext">正在检测安全支付服务版本</string>
+    <string name="str_dia2_headlinetext">确认退出支付</string>
+    <string name="str_dia2msgtext">交易未完成，是否结束支付？</string>
+    <string name="str_btn_back_text">确认退出</string>
+    <string name="str_btn_goon_text">继续支付</string>
+    
+ <!-- main_activity -->
+    <string name="main_activity_radiobtn_bankcard_title">快钱</string>
+    <string name="main_activity_radiobtn_alipay_title">支付宝</string>
+    <string name="main_activity_radiobtn_unicom_title">联通</string>
+    <string name="main_activity_menu_bank_card_manger">银行卡管理</string>
+    <string name="main_activity_menu_phone_manger">手机号管理</string>
+    <string name="main_activity_menu_qrcode">二维码扫描</string>
+    <string name="main_activity_menu_custom_service">客服服务</string>
+    <!-- common_customer_view -->
+    <string name="common_customer_view_tv_price_units">元</string>
+    <string name="common_customer_view_tv_user">用户:</string>
+    <string name="common_customer_view_tv_product">商品:</string>
+    <!-- bankcard OR fastmoney fragment -->
+<!--     <string name="bankcard_fragment_tv_tip">支持工、招、建、中、农等主流银行</string> -->
+    <string name="bankcard_fragment_tv_tip">支持农、中、建、光大、平安、华夏、民生银行的借记卡和主流银行信用卡</string>
+    <string name="bankcard_fragment_btn_fast_pay">去快钱支付</string>
+    
+    <string name="bankcard_fragment_et_hint_bank">请输入银行卡号</string>
+    <string name="bankcard_fragment_et_hint_life">有效期(月/年)</string>
+    <string name="bankcard_fragment_et_hint_sign">签名栏后三位</string>
+    <string name="bankcard_fragment_et_hint_id">持卡人身份证号</string>
+    <string name="bankcard_fragment_et_hint_phone">请输入预留手机号</string>
+    
+    <string name="bank_pay_dialog_btn_hint_get_check_code">获取验证码</string>
+    <string name="bank_pay_dialog_et_hint_check_code">请输入验证码</string>
+    <string name="bank_pay_dialog_et_hint_bind">确定支付</string>
+    <string name="bank_pay_dialog_tv_tip_message">短信验证码已发送至:</string>
+
+    <!-- alipay fragment -->
+    <string name="alipay_fragment_tv_tip">确认无误后去支付宝付款</string>
+    <string name="alipay_fragment_btn_sure_pay">去支付宝支付</string>
+   <!-- unicompay fragment   -->
+    <string name="unicompay_fragment_tv_tip">请确认订单信息</string>
+    <string name="unicompay_fragment_btn_sure_pay">确认话费支付</string>
+    <string name="unicompay_fragment_et_hint_tip">请输入手机号</string>
+     <!--tv   phone_pay_fragment -->
+    <string name="app_name">AtetPayTv</string>
+    <string name="atet_qr_name">ATET钱包</string>
+    <string name="phone_pay_fragment_tv_custom_service_tip">支付客服电话：400-0022-033</string>
+    <string name="phone_pay_fragment_item_tv_right_tip_1">3.按&#160;</string>
+    <string name="phone_pay_fragment_item_tv_right_tip_2">&#160;键获取更多帮助。</string>
+    <string name="phone_pay_fragment_item_tv_left_icon_up_tip">如已下载钱包直接扫描订单</string>
+    <string name="phone_pay_fragment_item_tv_left_tip_up_tip">扫描二维码下载ATET手机钱包</string>
+    <string name="phone_pay_fragment_item_tv_left_icon_down_tip">目前只支持Android手机，推荐使用扫一扫、UC浏览器等系统自带工具扫描</string>
+    <string name="phone_pay_fragment_item_tv_center_icon_up_string">￥0.55 </string>
+    <string name="phone_pay_fragment_item_tv_center_tip_up_string">ATET手机钱包扫描订单二维码</string>
+    <string name="phone_pay_fragment_item_tv_right1_string">1.ATET手机钱包支持银联、支付宝、财付通、手机话费充值。</string>
+    <string name="phone_pay_fragment_item_tv_right2_string">2.打开手机钱包下载更多手机精品游戏。</string>
+
+<string name="phone_pay_fragment_item_tv_center_tip_down_string">手机支付时请勿退出手机钱包支付界面，否则会导致支付失败</string>
+    <!-- main_activity -->
+    <string name="main_activity_tab_bank_card_string">银行卡一键支付</string>
+    <string name="main_activity_tab_phone_pay_string">手机钱包支付&#160;&#160;&#160;</string>
+    <string name="main_activity_tab_unicom_pay_string">联通专享支付&#160;&#160;&#160;</string>
+
+    <!-- bank_pay_fragment -->
+    <string name="bank_pay_fragment_tv_product_string">商品名称</string>
+    <string name="bank_pay_fragment_btn_add_bank_card_string">借记卡</string>
+    <string name="bank_pay_fragment_btn_add_credit_card_string">信用卡</string>
+    <string name="bank_pay_fragment_btn_add_bank_card_tip_string">采用银行级标准加密技术，保障您的信息安全，所有银行卡信息都不会保存在非金融机构</string>
+    <string name="bank_pay_fragment_dedt_bank_card_tip_string">请输入银行卡号</string>
+    <string name="bank_pay_fragment_btn_add_bank_card_sure_string">确定</string>
+    <string name="bind_bank_card_dialog_btn_confirm">确定</string>
+    <string name="bind_bank_card_dialog_btn_cancle">取消</string>
+    <string name="bind_bank_card_dialog_tv_agree_string">同意《银行卡一键支付协议》</string>
+    <string name="bind_bank_card_dialog_et_check_code_hint_string">请输入验证码</string>
+    <string name="bind_bank_card_dialog_btn_check_code_string">获取验证码</string>
+    <string name="bind_bank_card_dialog_et_id_hint_string">请输入身份证号码</string>
+   <string name="bind_bank_card_dialog_et_name_hint_string">请输入持卡人姓名</string>
+   <string name="bind_bank_card_dialog_bt_not_bz_hint_string">您的系统中不存在浏览器,请先安装浏览器</string>
+   <string name="bind_bank_card_dialog_bt_agree_string">同意银行卡一键支付协议</string>
+   
+  
+    <string name="bind_bank_card_dialog_et_phone_hint_string">请输入手机号码</string>
+ 
+   <string name="bind_bank_card_dialog_et_phone_credit_life_hint_string">卡有效期(月/年)</string>
+   <string name="bind_bank_card_dialog_et_phone_credit_number_hint_string">卡背面签名栏后三位</string>
+  
+    <!-- login activity -->
+     <!-- 账户界面 -->
+    <string name="start_account_nickname">昵称 </string>
+    <string name="start_account_id">ID:</string>
+    <string name="start_account_username">用户名:</string>
+    <string name="start_account_sure_btn">确认</string>
+    <string name="start_account_register_btn">注册</string>
+    <string name="start_account_login_btn">登录</string>
+    <string name="start_account_title">账户配置</string>
+    <string name="start_account_nickname_notnull">昵称不能为空</string>
+    <string name="start_account_username_notnull">用户名不能为空</string>
+    <string name="start_account_password_notnull">密码不能为空</string>
+    <string name="start_account_repassword_notnull">确认密码不能为空</string>
+    <string name="start_account_2password_notsame">两次密码不一致</string>
+    <string name="start_account_email_notnull">邮箱不能为空</string>
+    <string name="start_account_phone_notnull">电话号码不能为空</string>
+    <string name="start_account_register_success">注册成功</string>
+    <string name="start_account_register_fail">注册失败</string>
+    <string name="start_account_login_success">登录成功</string>
+    <string name="start_account_login_fail">登录失败</string>
+    <string name="start_skip">跳 过</string>
+    <string name="start_account_network_exception">网络不可用，请检查你的网络</string>
+
+    <!-- 用户登录注册返回码对应字符 -->
+    <string name="launcher_account_code_login_param_error">登录参数错误</string>
+    <string name="launcher_account_code_username_format_error">用户名格式错误</string>
+    <string name="launcher_account_code_password_format_error">密码格式错误</string>
+    <string name="launcher_account_code_chinesename_format_error">中文名格式错误</string>
+    <string name="launcher_account_code_phone_format_error">手机号格式错误</string>
+    <string name="launcher_account_code_email_format_error">邮箱格式错误</string>
+    <string name="launcher_account_code_wechat_format_error">微信号格式错误</string>
+    <string name="launcher_account_code_qq_format_error">QQ号格式错误</string>
+    <string name="launcher_account_code_deviceid_format_error">设备ID格式错误</string>
+    <string name="launcher_account_code_user_primary_key_error">用户主键ID无效</string>
+    <string name="launcher_account_code_old_password_error">旧密码错误</string>
+    <string name="launcher_account_code_new_password_error">新密码错误</string>
+    <string name="launcher_account_nickname_format_error">昵称格式错误</string>
+    <string name="launcher_account_user_not_exits">此用户不存在</string>
+    <string name="launcher_account_user_frozen">该用户已被冻结</string>
+    <string name="launcher_account_user_locked">该用户已被锁定</string>
+    <string name="launcher_account_user_password_error">账号密码错误</string>
+    <string name="launcher_account_register_fail">注册失败</string>
+    <string name="launcher_account_user_exits">该用户已存在</string>
+    <string name="launcher_account_two_password_not_match">两次输入的密码不一致</string>
+    <string name="launcher_account_user_name_null">用户名为空</string>
+    <string name="launcher_account_password_null">密码为空</string>
+    <string name="launcher_account_email_null">邮箱为空</string>
+    <string name="launcher_account_nickname_null">昵称为空</string>
+    <string name="launcher_account_deviceid_error">设备id错误</string>
+    <string name="launcher_account_device_code_error">设备code错误</string>
+
+    <!-- 注册页面格式错误提示 -->
+    <string name="launcher_register_username_format_error">用户名格式错误,由5-16个字母、数字或下划线组成，必须以字母开头</string>
+    <string name="launcher_register_password_format_error">密码格式错误，由5-16个字母或数字组成</string>
+    <string name="launcher_register_email_format_error">邮箱格式错误,请输入正确格式的邮箱</string>
+    <string name="launcher_register_repassword">两次输入的密码不相同</string>
+    <string name="launcher_register_nickname_format_error">昵称格式错误,</string>
+    <string name="launcher_register_phone_format_error">手机号码格式不正确,必须符合手机号码格式</string>
+    <!-- 修改资料页面格式错误提示 -->
+    <string name="launcher_update_oldpassword_error">旧密码填写错误，请填写正确的密码</string>
+      <!-- 账户登录 -->
+    <string name="setting_account_login">用户登录</string>
+    <string name="setting_account_login_username">用户名：</string>
+    <string name="setting_account_login_username_hint">请输入用户名。</string>
+    <string name="setting_account_register_title">用户注册</string>
+    <string name="setting_account_register_tv_password_hint">请输入密码。</string>
+      <!-- 账户注册 -->
+    <string name="setting_account_register_tv_password">密      码：</string>
+    <string name="setting_account_register_tv_repassword">确认密码：</string>
+    <string name="setting_account_register_tv_email">邮箱</string>
+    <string name="setting_account_register_tv_phone">手机</string>
+    <string name="setting_account_register_tv_id">ID</string>
+    <string name="setting_account_register_tv_tip">部分为必填项</string>
+    <string name="setting_account_register_tv_tip1">带</string>
+      <!-- 账户管理 -->
+    <string name="setting_account_title">个人中心</string>
+    <string name="setting_account_confirm">确认</string>
+    <string name="start_account_tv_nickname">昵称:</string>
+    <string name="setting_account_switchaccount">切换帐号</string>
+    <string name="setting_account_findpassword">找回密码</string>
+    <string name="setting_account_modifieddata">修改资料</string>
+    
+    <!-- 找回密码 -->
+    <string name="setting_account_find">找回密码</string>
+    <string name="setting_account_find_byemail">通过邮箱找回密码 </string>
+    <string name="setting_account_find_byphone">通过手机找回密码</string>
+    <string name="setting_account_find_byemail_mail_notmatch">输入邮箱与注册邮箱不匹配！</string>
+    <string name="setting_account_find_byemail_error">密码找回失败,请检查用户名或邮箱是否正确！</string>
+    <string name="setting_account_find_byemail_mail_success">成功找回密码！请使用新密码重新登录！</string>
+  	<string name="down_error_disable_not_wifi">提示：已禁止非Wifi环境下载！</string>
+    <string name="down_error_disconnect">网络未连接！</string>
+    <string name="down_error_sd_not_mount">SD卡不可用！</string>
+      
+       <!-- 服务器统一错误码对应显示消息 -->
+    <string name="code_sys_success">操作成功</string>
+    <string name="code_sys_invalid_option">服务器匹配设备型号失败</string>
+    <string name="code_sys_inner_error">服务器异常，请稍候再试</string>
+    <string name="code_sys_illegal_opera1">非法操作</string>
+    <string name="code_sys_json_parse_error">请求json格式解析错误</string>
+    <string name="code_sys_request_params_error">获取请求参数错误</string>
+    <string name="code_sys_invalid_token">令牌无效</string>
+    <string name="code_token_create_error">创建令牌错误</string>
+    <string name="code_sign_id_empty">用户ID为空</string>
+    <string name="code_sign_pwd_empty">用户密码为空</string>
+    <string name="code_sign_imei_empty">IMEI为空</string>
+    <string name="code_sign_signature_empty">程序签名为空</string>
+    <string name="code_sign_signature_pwd_empty">程序签名密码为空</string>
+    <string name="code_sign_signature_invalid">程序签名验证不通过</string>
+    <string name="code_game_no_required_data">没有符合要求的数据</string>
+    <string name="code_game_id_not_exist">该游戏ID不存在</string>
+      <!-- 账号管理页面文字的大小 -->
+    <dimen name="start_content_size2">18sp</dimen>
+    
+     <!-- 账户注册以及修改资料et用到的提示字符串 -->
+    <string name="setting_account_register_et_tip_email">用于找回密码</string>
+    <string name="setting_account_register_et_tip_phone">手机号码(用于活动领奖)</string>
+    <string name="setting_account_register_et_tip_nickname">请使用汉字或字母</string>
+    <string name="setting_account_register_et_tip_username">5-16位,以字母开头</string>
+    <string name="setting_account_register_et_tip_pw">5-16位的密码</string>
+    <string name="setting_account_register_et_tip_old_pw">5-16位的密码</string>
+    <string name="setting_account_register_et_tip_new_pw">请输入新密码</string>
+    <string name="setting_account_register_et_tip_re_pw">请再次输入密码</string>
+    <string name="setting_account_register_et_tip_re_new_pw">请再次输入新密码</string>
+    <string name="setting_account_findpw_et_tip_email">请输入邮箱</string>
+    
+     <!-- 账户修改 -->
+    <string name="setting_account_info_update_title">修改资料</string>
+    <string name="start_account_info_update_bt_back">返回</string>
+    <string name="setting_account_info_update_tv_oldpassword">旧密码</string>
+    <string name="setting_account_info_update_tv_newpassword">5-16位的新密码</string>
+    <string name="setting_account_info_update_tv_2pwdnotsame">确认密码和新密码不一致，请重新输入</string>
+    <string name="setting_account_info_update_tv_fail">修改用户资料失败</string>
+    <string name="setting_account_info_update_tv_success">修改成功</string>
+    <string name="setting_account_info_update_tv_oldpassword_not_null">旧密码不能为空</string>
+    <string name="setting_account_info_update_tv_newpassword_not_null">新密码不能为空</string>
+    <string name="setting_account_info_update_tv_oldpassword_error">旧密码错误</string>
+    <string name="setting_account_info_update_tv_newpassword_error">新密码错误</string>
+    <string name="setting_account_info_update_tv_confirmoassword_not_null">确认密码不能为空</string>
+    <string name="setting_account_info_update_tv_md5_error">服务器响应失败，请稍后再试</string>
+    <string name="setting_account_info_update_password_not_match">密码不匹配</string>
+    <string name="setting_account_register_btn_modifypassword">修改密码</string>
+    <string name="launcher_account_et_poptip_error">您还有选项未正确填写哦,请先填写再提交</string>
+    
+    <!-- 用户登陆系统 -->
+    <string name="user_login_username">用户名：</string>
+    <string name="user_login_username_et_hint">请输入用户名。</string>
+    <string name="user_login_pwd">密　码：</string>
+    <string name="user_login_pwd_et_hint">请输入密码。</string>
+    <string name="user_login_new_pwd">新密码：</string>
+    <string name="user_login_new_pwd_et_hint">请输入新密码。</string>
+    <string name="user_login_pwd_confirm">确认密码：</string>
+    <string name="user_login_new_pwd_confirm_et_hint">请再次输入新密码。</string>
+    <string name="user_login_email">邮　箱：</string>
+    <string name="user_login_email_et_hint">常用邮箱（用于找回密码）。</string>
+    <string name="user_login_btn_login_txt">登录</string>
+    <string name="user_login_btn_reg_txt">注册</string>
+    <string name="user_login_btn_confirm_txt">确认</string>
+    <string name="user_login_btn_cancle_txt">取消</string>
+    <string name="user_login_btn_commit_txt">提交</string>
+    <string name="user_login_title_findpwd_txt">找回密码</string>
+    <string name="user_tips_login_error">登录失败，请稍后再试。</string>
+    <string name="user_tips_login_successed">登录成功。</string>
+    <string name="user_tips_register_successed">注册成功。</string>
+    <string name="user_tips_findpwd_successed">找回密码成功，请到您指定的邮箱查看信息。</string>
+    <string name="user_tips_findpwd_error">操作失败，请稍后再试。</string>
+    <string name="user_tips_findpwd_failed">找回密码失败。 code: </string>
+    <string name="user_tips_register_error">注册异常，请稍后再试。</string>
+    <string name="user_tips_register_failed">注册失败。 code: </string>
+    <string name="user_tips_username_is_not_exist">用户名不存在。</string>
+    <string name="user_tips_username_is_already_exist">注册失败，用户名已经存在。</string>
+    <string name="user_tips_login_pwd_is_wrong">登录密码错误。</string>
+    <string name="user_tips_findpwd_email_is_wrong">输入的邮箱与注册的邮箱不匹配！</string>
+    <string name="user_tips_login_failed">登录失败。 code: </string>
+    <string name="user_tips_network_is_unavailable">当前网络不可用，请检查网络连接。</string>
+    <string name="user_tips_invailed_input_username">输入的用户名格式不正确。用户名必须以字母开头，长度为5-16的字母、数字或者下划线组成。</string>
+    <string name="user_tips_invailed_input_pwd">输入的密码格式不正确。密码是长度为5-16位的字母或数字。</string>
+    <string name="user_tips_invailed_input_email">输入的邮箱地址格式不正确。</string>
+    <string name="user_tips_invailed_input_phone">输入的手机格式不正确。</string>
+    <string name="user_tips_invailed_input_chinesename">中文名字格式不正确。</string>
+    <string name="user_tips_invailed_input_qq">QQ格式不正确。</string>
+    <string name="user_tips_invailed_input_nickname">昵称格式不正确。</string>
+    <string name="user_tips_invailed_input_two_pwd_is_not_same">两次输入的密码不一致。</string>
+    <string name="user_tips_empty_input_username">用户名不能为空！</string>
+    <string name="user_tips_empty_input_pwd">密码不能为空。</string>
+    <string name="user_tips_empty_input_email">邮箱地址不能为空。</string>
+    <string name="user_tips_empty_input_phone">手机号码不能为空。</string>
+    <string name="user_tips_empty_input_chinesename">中文名字不能为空。</string>
+    <string name="user_tips_empty_input_qq">QQ号码不能为空。</string>
+    <string name="user_tips_empty_input_nickname">昵称不能为空。</string>
+    <string name="user_tips_empty_input_repwd">确认密码不能为空。</string>
+    
+    
+    <string name="pay_request_connection_fail">连接服务器失败</string>
+    <string name="pay_request_server_error">连接服务器错误</string>
+    <string name="pay_request_unknown_host">连接服务器失败，请检查网络</string>
+    <string name="pay_request_timeout">连接服务器超时</string>
+    <string name="pay_request_verify_sign_fail">校验签名失败</string>
+    <string name="pay_request_network_not_available">网络未连接</string>
+    
+    <string name="pay_dialog_ok">确定</string>
+    <string name="pay_dialog_cancel">取消</string>
+    <string name="pay_dialog_paying">正在支付，请稍候&#8230;&#8230;&#8230;</string>
+    <string name="pay_request_check_pay_point_fail">校验支付点失败，请核对支付点,错误码：</string>
+    <string name="pay_request_get_order_no_fail">生成订单号失败,错误码：</string>
+    <string name="pay_request_pay_success">支付成功</string>
+    <string name="pay_request_pay_fail">支付失败</string>
+    <string name="pay_request_pay_cancel">取消支付</string>
+    <string name="pay_request_pay_paying">支付中，请稍等</string>
+    <string name="pay_request_pay_fail_with_code">支付失败，错误码：</string>
+    <string name="pay_request_pay_fail_with_msg">支付失败：</string>
+    <string name="pay_request_pay_fail_not_enough_money">支付失败：余额不足</string>
+    <string name="pay_request_pay_fail_orderno_not_equal">支付失败：订单号不一致</string>
+    
+    <string name="pay_request_init_ing">正在启动安全支付环境...</string>
+    <string name="pay_request_init_fail">初始化支付失败</string>
+    <string name="pay_request_init_fail_invalid_qr_code">不是合法的支付订单二维码</string>
+    <string name="pay_request_init_fail_to_get_product_id_with_code">获取产品ID失败,错误码：</string>
+    <string name="pay_request_init_fail_to_get_product_id">获取产品ID失败</string>
+    <string name="pay_request_init_fail_to_get_pay_type">获取支付方式失败</string>
+    <string name="pay_request_init_fail_pay_disabled">支付服务已暂时关闭，请稍候再试</string>
+    <string name="pay_request_init_fail_to_get_pay_type_and_retry">获取支付方式失败，请稍候再试</string>
+    
+    <string name="pay_request_alipay_dialog_cancel">取消返回</string>
+    <string name="pay_request_alipay_dialog_continue_to_pay">继续支付</string>
+    <string name="pay_request_alipay_dialog_360_conflict_title">注意</string>
+    <string name="pay_request_alipay_dialog_360_conflict_msg">支付宝支付与个别版本的360支付保镖冲突，为避免损失，建议关闭360支付保镖！</string>
+    
+    <string name="pay_request_unicom_dialog_getting_captcha">正在获取验证码&#8230;&#8230;&#8230;</string>
+    <string name="pay_request_unicom_dialog_binding">正在绑定,请稍候&#8230;&#8230;&#8230;</string>
+    <string name="pay_request_unicom_get_captcha_success">请求成功，请注意查收手机验证码</string>
+    <string name="pay_request_unicom_get_captcha_fail">获取验证码失败</string>
+    <string name="pay_request_unicom_get_captcha_fail_with_code">获取验证码失败，错误码：</string>
+    <string name="pay_request_unicom_bind_success">绑定手机号成功</string>
+    <string name="pay_request_unicom_bind_captcha_out_of_date">验证码已失效，请重新获取验证码</string>
+    <string name="pay_request_unicom_bind_captcha_error">验证码错误</string>
+    <string name="pay_request_unicom_bind_fail_with_code">绑定手机号失败，错误码：</string>
+    <string name="pay_request_unicom_bind_fail">绑定手机号失败</string>
+    <string name="pay_request_unicom_check_no_empty">请输入手机号</string>
+    <string name="pay_request_unicom_check_no_invalid">请输入正确的联通手机号</string>
+    <string name="pay_request_unicom_check_captcha_empty">请输入验证码</string>
+    <string name="pay_request_unicom_confirm_to_pay">确认话费支付</string>
+    <string name="pay_request_unicom_unbind">未绑定</string>
+    <string name="pay_request_unicom_bind_phone">绑定手机</string>
+    <string name="pay_request_unicom_dialog_unbind_phone">解绑手机</string>
+    <string name="pay_request_unicom_dialog_unbind_phone_msg">确定解除手机绑定吗？</string>
+    
+    <string name="pay_request_qmoney_dialog_verify_card_no">正在检测卡信息，请稍候&#8230;&#8230;&#8230;</string>
+    <string name="pay_request_qmoney_verify_card_no_fail">检测卡信息失败</string>
+    <string name="pay_request_qmoney_verify_card_no_not_support">暂不支持该类型的银行卡</string>
+    <string name="pay_request_qmoney_verify_card_no_fail_with_code">检测卡信息失败，错误码：</string>
+    <string name="pay_request_qmoney_dialog_get_captcha">正在获取验证码，请稍候&#8230;&#8230;&#8230;</string>
+    <string name="pay_request_qmoney_get_captcha_success">获取验证码成功，请注意查收验证码</string>
+    <string name="pay_request_qmoney_get_captcha_fail">获取验证码失败</string>
+    <string name="pay_request_qmoney_get_captcha_fail_with_msg">获取验证码失败：</string>
+    <string name="pay_request_qmoney_check_card_no_empty">请输入银行卡号</string>
+    <string name="pay_request_qmoney_check_card_no_invalid">请输入正确的银行卡号</string>
+    <string name="pay_request_qmoney_check_name_empty">请输入持卡人姓名</string>
+    <string name="pay_request_qmoney_check_name_invalid">请输入正确的持卡人姓名</string>
+    <string name="pay_request_qmoney_check_protocol">请先阅读并同意《银行卡一键支付协议》</string>
+    <string name="pay_request_qmoney_check_captcha_token">请先获取验证码，然后输入正确的验证码</string>
+    <string name="pay_request_qmoney_check_captcha_token_reset">验证码已失效，请重新获取验证码</string>
+    <string name="pay_request_qmoney_check_id_empty">请输入身份证号</string>
+    <string name="pay_request_qmoney_check_id_invalid">请输入正确的身份证号：</string>
+    <string name="pay_request_qmoney_check_expired_date_empty">请输入卡的有效期</string>
+    <string name="pay_request_qmoney_check_cvv_empty">请输入卡的背面签名栏后三位</string>
+    <string name="pay_request_qmoney_check_phone_empty">请输入手机号</string>
+    <string name="pay_request_qmoney_check_phone_invalid">请输入正确的手机号</string>
+    <string name="pay_request_qmoney_check_captcha_empty">请输入验证码</string>
+    <string name="pay_request_qmoney_dialog_binding_confirm_back">信息未完成，是否返回上一步？</string>
+    <string name="pay_request_qmoney_unknown_bank">未知银行</string>
+    <string name="pay_request_qmoney_binded_card_no">已绑定银行卡：</string>
+    <string name="pay_request_qmoney_confirm_to_pay">确定支付</string>
+    
+    <string name="pay_request_login_fail">登录失败</string>
+</resources>

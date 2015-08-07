@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 指定获得焦点时的颜色 -->
+    <item android:drawable="@drawable/setting_accoutmanage_et_press" android:state_enabled="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/setting_accoutmanage_et_focus" android:state_enabled="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/setting_accoutmanage_et_normal" android:state_enabled="false" android:state_focused="false"/>
+    <item android:drawable="@drawable/setting_accoutmanage_et_normal"/>
+
+</selector>

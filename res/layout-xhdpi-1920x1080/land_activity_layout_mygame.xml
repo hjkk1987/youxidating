@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FF17191A"
+    android:paddingBottom="1dp"
+    android:paddingTop="@dimen/land_mygame_page_paddingLR" >
+
+<!--     <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/land_mygame_page_paddingLR"
+        android:src="@drawable/land_mygame_decor_bottom_left" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/land_mygame_page_paddingLR"
+        android:src="@drawable/land_mygame_decor_bottom_right" /> -->
+
+    <LinearLayout
+        android:id="@+id/mygame_linearlayout_dotContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/land_mygame_dot_container_bg"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mygame_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/mygame_linearlayout_dotContainer" />
+
+</RelativeLayout>

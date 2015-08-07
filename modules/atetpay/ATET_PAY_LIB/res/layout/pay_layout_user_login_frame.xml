@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/user_login_frame_bg" >
+    <TextView 
+        android:id="@+id/user_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:text="用户登陆"/>"
+    <LinearLayout 
+        android:id="@+id/user_login_input_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_login_title"
+        android:background="@drawable/user_login_input_frame_bg"
+        android:orientation="horizontal">
+        <TextView android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textSize="24sp"
+            android:text="用户名："/>
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="请输入用户名。"
+            android:textSize="24sp"
+            android:background="@null"
+        	android:layout_weight="5"/>t
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_login_input_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/user_login_input_username"
+		android:background="@drawable/user_login_input_frame_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:text="密码：" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:textSize="24sp"
+            android:background="@null"
+            android:hint="请输入密码。" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_login_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_login_input_pwd"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/user_loging_btn_reg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:focusable="true"
+        	android:focusableInTouchMode="true"
+            android:text="注册" />
+        <View 
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/user_loging_btn_loging"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_weight="5"
+            android:focusable="true"
+        	android:focusableInTouchMode="true"
+            android:text="登陆" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_login_find_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/user_login_btns"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:text="找回密码" />
+
+    <!-- <TextView
+        android:id="@+id/user_login_modify_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user_login_find_pwd"
+        android:layout_alignBottom="@+id/user_login_find_pwd"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textSize="24sp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/user_login_find_pwd"
+        android:visibility="gone"
+        android:text="修改密码" /> -->
+
+</RelativeLayout>

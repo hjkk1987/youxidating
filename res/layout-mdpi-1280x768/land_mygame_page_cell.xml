@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PageCell" >
+
+    <ImageView
+        android:id="@+id/mygame_cell_iv_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/minphoto" />
+
+    <TextView
+        android:id="@+id/mygame_cell_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="18dp"
+        android:layout_toRightOf="@+id/mygame_cell_iv_icon"
+        android:duplicateParentState="true"
+        android:ellipsize="end"
+        android:ems="5"
+        android:singleLine="true"
+        android:text="game name"
+        android:textColor="@color/land_mygame_page_cell_text_color"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/mygame_cell_tipbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mygame_cell_iv_icon"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_toRightOf="@+id/mygame_cell_iv_icon"
+        android:duplicateParentState="true"
+        android:focusable="true"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/mygame_tipbar_proBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/land_mygame_down_progress_bg_selector"
+            android:duplicateParentState="true"
+            android:max="100"
+            android:minHeight="12dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="2dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/land_mygame_cell_progress"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/mygame_tipbar_tv_progress"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mygame_tipbar_proBar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="6dp"
+            android:duplicateParentState="true"
+            android:singleLine="true"
+            android:text="0%"
+            android:textColor="@color/land_mygame_page_cell_text_color"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/mygame_tipbar_iv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mygame_tipbar_proBar"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/mygame_tipbar_tv_progress"
+            android:background="@drawable/land_mygame_down_start_selector"
+            android:duplicateParentState="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

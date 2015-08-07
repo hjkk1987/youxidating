@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_activity_bg_color"
+    android:orientation="vertical"
+    android:padding="@dimen/fragment_common_padding" >
+ <ScrollView
+     android:id="@+id/bankcard_fragemnt_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+              >
+    <include
+        android:id="@+id/common_customer_view_include_show_order_bankcard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_customer_view_include_show_order_h"
+        layout="@layout/common_customer_view_show_order"
+        android:padding="@dimen/fragment_common_padding" />
+
+    <TextView
+        android:id="@+id/bankcard_fragemnt_confirm_order_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bankcard_fragment_tv_tip"
+        android:textSize="@dimen/payfont11" />
+<!--         android:layout_marginTop="@dimen/common_customer_view_tv_margintop" -->
+
+    <Spinner
+        android:id="@+id/bankcard_fragment_spinner_bank"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bankcard_fragment_sp_comom_selector"
+        android:spinnerMode="dialog"
+        android:visibility="gone" />
+
+    <com.atet.api.pay.ui.tv.customview.DivisionEditText
+        android:id="@+id/bankcard_fragment_et_bank_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_common_et_h"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bankcard_fragment_et_comom_selector"
+        android:hint="@string/bankcard_fragment_et_hint_bank"
+        android:digits="0123456789 "
+        android:inputType="number"
+        android:maxLength="27"
+        android:paddingLeft="5dp"
+        android:textSize="@dimen/payfont12" />
+
+   
+            
+            <LinearLayout
+                android:id="@+id/bankcard_fragment_lin_add_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingRight="32dp"
+                android:visibility="gone" >
+                
+                <LinearLayout
+                    android:id="@+id/bankcard_fragment_lin_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/bankcard_fragment_et_name"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/fragment_common_et_h"
+                        android:layout_weight="1"
+                        android:background="@drawable/bankcard_fragment_et_comom_selector"
+                        android:hint="持卡人签名"
+                        android:maxLength="15"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/payfont12" />
+
+                    <EditText
+                        android:id="@+id/bankcard_fragment_et_id"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/fragment_common_et_h"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bankcard_fragment_et_comom_selector"
+                        android:hint="@string/bankcard_fragment_et_hint_id"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                    	android:maxLength="18"
+                    	android:digits="0123456789xX"
+                        android:textSize="@dimen/payfont12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bankcard_fragment_lin_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/bankcard_fragment_et_life"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/fragment_common_et_h"
+                        android:layout_weight="1"
+                        android:background="@drawable/bankcard_fragment_et_comom_selector"
+                        android:hint="@string/bankcard_fragment_et_hint_life"
+                        android:maxLength="4"
+				        android:digits="0123456789"
+				        android:inputType="number"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/payfont12" />
+
+                    <EditText
+                        android:id="@+id/bankcard_fragment_et_sign"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/fragment_common_et_h"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bankcard_fragment_et_comom_selector"
+                        android:hint="@string/bankcard_fragment_et_hint_sign"
+                        android:maxLength="3"
+				        android:digits="0123456789"
+				        android:inputType="number"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/payfont12" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/bankcard_fragment_et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fragment_common_et_h"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bankcard_fragment_et_comom_selector"
+                    android:hint="@string/bankcard_fragment_et_hint_phone"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/payfont12" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <CheckBox
+                        android:id="@+id/bankcard_fragment_cb_protocol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/bankcard_fragment_tv_protocol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#654321" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+           
+    </ScrollView>
+          
+ <Button
+                android:id="@+id/bankcard_fragment_btn_fast_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/common_btn_selector"
+                android:text="@string/bankcard_fragment_btn_fast_pay"
+                android:textSize="@dimen/payfont10" />
+   
+</LinearLayout>

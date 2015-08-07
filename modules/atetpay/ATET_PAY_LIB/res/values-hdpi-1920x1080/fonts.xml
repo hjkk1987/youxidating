@@ -1,0 +1,37 @@
+<resources>
+
+<!-- payfont size from High Fidelity -->
+
+
+
+   <!--  <dimen name="payfont0">36sp</dimen> 24 -->
+   <!--  <dimen name="payfont1">27sp</dimen> 24
+    <dimen name="payfont2">24sp</dimen>
+    <dimen name="payfont3">21sp</dimen>
+    <dimen name="payfont4">18sp</dimen>
+    <dimen name="payfont5">16sp</dimen>
+    <dimen name="payfont6">14sp</dimen>
+    <dimen name="payfont7">12sp</dimen>
+    <dimen name="payfont8">10sp</dimen>
+    <dimen name="payfont9">8sp</dimen>
+    <dimen name="payfont10">6sp</dimen> -->
+    <dimen name="payfontpirce">46sp</dimen> 
+    
+    <dimen name="payfont1">36sp</dimen>
+    <dimen name="payfont2">32sp</dimen>
+    <dimen name="payfont3">30sp</dimen>
+    <dimen name="payfont4">28sp</dimen>
+    <dimen name="payfont5">26sp</dimen>
+    <dimen name="payfont6">24sp</dimen>
+    <dimen name="payfont7">22sp</dimen>
+    <dimen name="payfont8">20sp</dimen>
+    <dimen name="payfont9">18sp</dimen>
+    <dimen name="payfont10">16sp</dimen>
+	<dimen name="payfont11">14sp</dimen>
+	<dimen name="payfont12">12sp</dimen>
+	<dimen name="payfont13">10sp</dimen>
+	<dimen name="payfont14">8sp</dimen>
+	<dimen name="payfont15">6sp</dimen>
+	<dimen name="payfont16">4sp</dimen>
+	
+</resources>

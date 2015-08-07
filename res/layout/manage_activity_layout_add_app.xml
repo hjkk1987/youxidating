@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg" >
+
+    <include
+        android:id="@+id/common_header"
+        android:layout_alignParentTop="true"
+        layout="@layout/layout_common_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/common_header" >
+
+        <GridView
+            android:id="@+id/manage_app_gv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="4"
+            android:verticalSpacing="10dp"
+            android:visibility="gone" >
+        </GridView>
+
+        <LinearLayout
+            android:id="@+id/manage_linearlayout_progress"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ProgressBar
+                android:id="@+id/manage_proBar_loading"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/manage_tv_loading_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manage_loading" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

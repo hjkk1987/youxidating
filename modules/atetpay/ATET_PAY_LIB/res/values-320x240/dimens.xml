@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- phone -->
+    <dimen name="fragment_common_padding">6dp</dimen>
+   <dimen name="phonenumber_manager_activity_btn_countdown_w">70dp</dimen>
+    <dimen name="common_customer_view_include_show_detail_order_h">105dp</dimen>
+   <!--  
+    <dimen name="common_customer_view_include_show_order_h">25dp</dimen>
+    -->
+    
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--     <color name="white">#ffffff</color>
+    <color name="black">#494848</color>
+    <color name="blue">#87ccef</color> -->
+     <color name="black_w">#827e7e</color>
+    <color name="sel_rdn">#494848</color>
+    <color name="rdn">#827e7e</color>
+    <color name="list_item_title">#494848</color>
+    <color name="list_item_content">#827e7e</color>
+    <color name="list_item_situation">#a3a3a3</color>
+    <color name="list_item_selector">#00000000</color>
+
+    <!-- colors from High Fidelity -->
+    <color name="color1">#ff000000</color>
+    <color name="color2">#ffffffff</color>
+    <color name="color3">#00ffffff</color>
+    <color name="color4">#494848</color>
+    <color name="color5">#827e7e</color>
+    <color name="color6">#87ccef</color>
+    <color name="color7">#5dc5f5</color>
+    <color name="color8">#0cabf5</color>
+    <color name="color9">#3665bb</color>
+    <color name="color10">#fcfefd</color>
+    <color name="color11">#393939</color>
+    <color name="color12">#070d11</color>
+    <color name="color13">#a3a3a3</color>
+    <color name="color14">#FFFFFF</color>
+    <color name="color15">#fcf3f3</color>
+    <color name="color16">#58c7fb</color>
+    <color name="color19">#53d0ff</color>
+    <color name="color22">#a0cada</color>
+    <color name="color20">#15c5e1</color>
+    <color name="color17">#15c5e1</color>
+    <color name="color18">#828282</color>
+    <color name="color23">#017587</color>
+    <color name="color21">#b5b5b5</color>
+    <color name="color24">#818181</color>
+    <color name="color25">#1b1b1b</color>
+    <color name="color26">#939393</color>
+    <color name="color27">#e3e6e8</color>
+    <color name="color28">#9fa3a4</color>
+    <color name="color29">#5d5f60</color>
+    <color name="color30">#c6c9cb</color>
+    <color name="color31">#67696a</color>
+    <color name="color32">#eaeef0</color>
+
+</resources>

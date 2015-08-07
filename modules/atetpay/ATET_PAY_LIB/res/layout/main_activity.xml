@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_activity_mainlinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/main_activity_tab_radiogroup"
+        android:layout_width="@dimen/common_customer_radiogroup_w"
+        android:layout_height="match_parent"
+        android:background="@color/main_activity_radiogroup_bg_color"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/main_activity_tab_bank_card"
+            style="@style/main_activity_radiobtn_style"
+            android:layout_gravity="center"
+            android:text="@string/main_activity_radiobtn_bankcard_title" />
+
+        <RadioButton
+            android:id="@+id/main_activity_tab_alipay"
+            style="@style/main_activity_radiobtn_style"
+            android:layout_gravity="center"
+            android:text="@string/main_activity_radiobtn_alipay_title" />
+
+        <RadioButton
+            android:id="@+id/main_activity_tab_unicom"
+            style="@style/main_activity_radiobtn_style"
+            android:text="@string/main_activity_radiobtn_unicom_title" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/main_activity_pay_detail_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

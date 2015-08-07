@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_activity_radiogroup_bg_color"
+    tools:context="com.atet.pay.MainActivity" >
+
+  <!--   <item
+        android:id="@+id/main_activity_menu_bank_card_manger"
+        android:orderInCategory="100"
+        android:title="@string/main_activity_menu_bank_card_manger"
+        app:showAsAction="never"/>
+        -->
+        
+<!--     <item
+        android:id="@+id/main_activity_menu_qrcode"
+        android:orderInCategory="100"
+        android:title="@string/main_activity_menu_qrcode"
+        app:showAsAction="never"/>  -->
+        
+<!--     <item
+        android:id="@+id/main_activity_menu_custom_service"
+        android:orderInCategory="100"
+        android:title="@string/main_activity_menu_custom_service"
+        app:showAsAction="never"/> -->
+
+    <item
+        android:id="@+id/main_activity_menu_custom_service"
+        android:orderInCategory="100"
+        android:title="@string/main_activity_menu_custom_service"
+    />
+</menu>
+<!-- <menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>
+ -->

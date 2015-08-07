@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" 
+    android:gravity="center">
+
+    
+    <!-- <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aipay_tv_logo_"
+        />
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center">
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aipay_tv_mobile_to_tv"
+        android:layout_marginBottom="20dp"
+        />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描二维码将订单转移至手机端，手机支付更便捷。" 
+        android:textSize="24sp"
+        android:layout_margin="30dp"
+         android:textColor="#333333"/>
+    </LinearLayout> -->
+
+</LinearLayout>

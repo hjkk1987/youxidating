@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/customer_edittext_lv_root"
+    android:layout_height="wrap_content"
+    android:background="@drawable/customer_edittext_selector"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/customer_edittext_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_gravity="center_vertical"
+        android:text="username"
+        android:textSize="@dimen/payfont7"
+         />
+
+    <EditText
+        android:id="@+id/customer_edittext_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:maxLength="11"
+        android:hint="123"
+        android:textSize="@dimen/payfont7"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+<!--     第二版调整前  6-18 22:45 -->
+<!--     font size from High Fidelity -->
+<!--     <dimen name="font1">20sp</dimen> 24 -->
+<!--     <dimen name="font2">17sp</dimen>20 -->
+<!--     <dimen name="font3">12sp</dimen>16 -->
+<!--     <dimen name="font4">18sp</dimen>22 -->
+<!--     <dimen name="font5">10sp</dimen>12 -->
+<!--     <dimen name="font6">11sp</dimen>14 -->
+<!--     <dimen name="font7">14sp</dimen>18 -->
+<!--     <dimen name="font8">26sp</dimen>30 -->
+<!--     <dimen name="font9">18sp</dimen>21 -->
+<!--     <dimen name="font10">24sp</dimen>28 -->
+
+
+
+
+
+<!-- font size from High Fidelity -->
+    <dimen name="font1">20sp</dimen> <!-- 24 -->
+    <dimen name="font2">16sp</dimen><!-- 20 -->
+    <dimen name="font3">12sp</dimen><!-- 16 -->
+    <dimen name="font4">18sp</dimen><!-- 22 -->
+    <dimen name="font5">10sp</dimen><!-- 12 -->
+    <dimen name="font6">11sp</dimen><!-- 14 -->
+    <dimen name="font7">14sp</dimen><!-- 18 -->
+    <dimen name="font8">16sp</dimen><!-- 30 -->
+    <dimen name="font9">18sp</dimen><!-- 21 -->
+    <dimen name="font10">20sp</dimen><!-- 28 -->
+    <dimen name="font11">28sp</dimen><!-- 32-->
+
+</resources>

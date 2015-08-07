@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6dp"
+    android:background="@drawable/listview_selector"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp"
+    android:paddingTop="6dp" >
+
+    <ImageView
+        android:id="@+id/manage_iv_icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/minphoto" />
+
+    <TextView
+        android:id="@+id/manage_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/manage_iv_icon"
+        android:ems="7"
+        android:singleLine="true"
+        android:text="@string/tv_softname"
+        style="@style/manage_collection_lv_title_720x1280_mdpi" />
+
+    <TextView
+        android:id="@+id/manage_tv_downtimes"
+        style="@style/manage_collection_lv_text_720x1280_mdpi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manage_tv_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/manage_iv_icon"
+        android:singleLine="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/manage_tv_size"
+        style="@style/manage_collection_lv_text_720x1280_mdpi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manage_tv_downtimes"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/manage_iv_icon"
+        android:singleLine="true"
+        android:text="" />
+    
+
+    <RatingBar
+        android:id="@+id/manage_ratingbar_starlevel"
+        style="@style/gradeRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manage_tv_downtimes"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/manage_tv_size"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="5"
+        android:rating="3" />
+
+    <TextView
+        android:id="@+id/manage_tv_startlevel"
+        style="@style/manage_collection_lv_text_720x1280_mdpi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manage_tv_downtimes"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/manage_ratingbar_starlevel"
+        android:singleLine="true"
+        android:text="" />
+
+    <Button
+        android:id="@+id/manage_btn_delcollection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:layout_toLeftOf="@+id/manage_btn_downinstall"
+        android:background="@drawable/manage_collection_btn_delete"/>
+
+    <Button
+        android:id="@+id/manage_btn_downinstall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/manage_collection_btn_download" />
+
+</RelativeLayout>

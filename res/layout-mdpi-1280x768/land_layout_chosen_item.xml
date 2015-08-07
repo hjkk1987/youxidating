@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="175dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@+id/land_iv_chosen_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/middlephoto"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/land_chosen_light"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/land_iv_newsign_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/land_chosen_selector"
+            android:clickable="true"
+            android:focusable="true" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="175dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:id="@+id/land_iv_chosen_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/middlephoto"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/land_chosen_light"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/land_iv_newsign_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/land_chosen_selector"
+            android:clickable="true"
+            android:focusable="true" />
+    </FrameLayout>
+
+</LinearLayout>

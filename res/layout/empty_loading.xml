@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2009 Joe LaPenna -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:id="@+id/common_layout_loading"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/common_layout_wiling"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/emptyProgress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dip" />
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+      		android:textColor="@color/color28"
+            android:text="@string/common_whilingLoad"
+            android:textSize="@dimen/font9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/commom_layout_prompt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_net_iv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="@color/color28"
+            android:text="@string/commom_net_prompt"
+            android:textSize="@dimen/font9" />
+
+        <TextView
+            android:id="@+id/common_tv_clickbreak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/common_click_break"
+            android:textColor="@color/color16"
+            android:textSize="@dimen/font10" />
+    </LinearLayout>
+
+</FrameLayout>

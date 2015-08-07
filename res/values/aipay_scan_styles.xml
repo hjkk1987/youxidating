@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Light" />
+    
+	<style name="Bottom_Btn">
+	<item name="android:textColor">#ffffff</item>
+	<item name="android:textSize">17sp</item> 
+	<item name="android:textStyle">bold</item>
+	<item name="android:shadowColor">#ffffff</item> 
+	<item name="android:shadowRadius">3</item>
+	<item name="android:paddingBottom">8dip</item> 
+	</style>
+	<style name="qianbaihui">
+	<item name="android:textColor">#ffffff</item>
+	<item name="android:textSize">25sp</item> 
+	<item name="android:textStyle">bold</item>
+	<item name="android:paddingBottom">8dip</item> 
+	</style>
+	
+	 <style name="Theme.UPPay" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

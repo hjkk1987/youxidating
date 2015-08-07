@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/imgReplyAvator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/minphoto" />
+
+    <TextView
+        android:id="@+id/tvReplyUserName"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imgReplyAvator"
+        android:layout_toRightOf="@id/imgReplyAvator"
+        android:singleLine="true"
+        android:textColor="@color/color4"
+        android:textSize="@dimen/font2" />
+
+    <TextView
+        android:id="@+id/tvReplyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tvReplyUserName"
+        android:layout_marginLeft="8dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:textColor="@color/color6"
+        android:textSize="@dimen/font7" />
+
+    <TextView
+        android:id="@+id/tvReplyWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvReplyUserName"
+        android:paddingTop="2dp"
+        android:layout_toRightOf="@id/imgReplyAvator"
+        android:textColor="@color/color5"
+        android:textSize="@dimen/font7" />
+
+</RelativeLayout>

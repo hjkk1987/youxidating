@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg" >
+
+    <include
+        android:id="@+id/square_header_replyTop"
+        layout="@layout/layout_common_header" />
+
+    <LinearLayout
+        android:id="@+id/reply_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/reomment" >
+
+        <ImageView
+            android:id="@+id/square_iv_reply"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sendcoment_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/square_layout_replyCenter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reply_bottom"
+        android:layout_below="@+id/square_header_replyTop"
+        android:background="@color/white" >
+
+        <!--
+             <ListView
+            android:id="@+id/listviewReply"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        -->
+    </LinearLayout>
+
+</RelativeLayout>

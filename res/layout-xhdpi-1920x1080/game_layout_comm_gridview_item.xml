@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    >
+    <ImageView 
+        android:id="@+id/game_iv_gvItemAvatar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/minphoto">
+    </ImageView>
+    <TextView android:id="@+id/game_tv_gvItemGameName"
+        android:layout_below="@+id/game_iv_gvItemAvatar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_alignLeft="@+id/game_iv_gvItemAvatar"
+        android:layout_alignRight="@+id/game_iv_gvItemAvatar"
+        android:singleLine="true"
+        android:ellipsize="marquee"   
+        android:gravity="center_horizontal"
+        style="@style/recommend_bottom_tv"
+        >
+    </TextView>
+</RelativeLayout>

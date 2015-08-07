@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include   android:id="@+id/detial_loading_head"
+        layout="@layout/layout_common_header" />
+
+        <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/detial_loading_body"
+            layout="@layout/empty_loading" />
+    <RelativeLayout
+         android:id="@+id/detail_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/game_relativeLayout_contentTop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp" >
+
+            <ImageView
+                android:id="@+id/game_iv_iconMin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/minphoto"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/game_tv_detailGameName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/game_iv_iconMin"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/game_iv_iconMin"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="@color/color4"
+                android:textSize="@dimen/font1" />
+
+            <TextView
+                android:id="@+id/game_tv_detailDownCounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/game_tv_detailGameName"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/game_iv_iconMin"
+                android:textColor="@color/color5"
+                android:textSize="@dimen/font3" />
+
+            <TextView
+                android:id="@+id/game_tv_detailGameSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/game_iv_iconMin"
+                android:gravity="center"
+                android:layout_below="@+id/game_tv_detailDownCounts"
+                android:textColor="@color/color5"
+                android:textSize="@dimen/font3" />
+
+            <RatingBar
+                android:id="@+id/game_ratingBar_detailGameMarke"
+                style="@style/gradeRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/game_tv_detailDownCounts"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/game_tv_detailGameSize"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:rating="4.5" />
+
+            <TextView
+                android:id="@+id/game_tv_detailStarLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/game_tv_detailGameSize"
+                android:layout_below="@+id/game_tv_detailDownCounts"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/game_ratingBar_detailGameMarke"
+                android:gravity="bottom"
+	            android:textColor="@color/color5"
+                android:textSize="@dimen/font3"  />
+
+            <Button
+                android:id="@+id/game_btn_detailCollection"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/game_iv_iconMin"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/color5"
+                android:background="@drawable/bg_game_collect_selector"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:text="@string/game_manage_savegame"
+                android:textSize="@dimen/font2" />
+
+            <Button
+                android:id="@+id/game_btn_detailGameDown"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/game_btn_detailCollection"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/color5"
+                android:background="@drawable/bg_game_download_selector"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:text="@string/btn_download_install"
+                android:textSize="@dimen/font2" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/game_linearLayout_contentMain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/game_linearLayout_contentBottom"
+            android:layout_below="@+id/game_relativeLayout_contentTop"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_detai_comm"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/game_radioGroup_detailComm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/game_radioButton_gameDetail"
+                    style="@style/game_zone_btn_style"
+                    android:checked="true"
+                    android:text="@string/game_game_detail"
+                    android:background="@drawable/btn_game_zone_left_selector"
+                    />
+
+                <RadioButton
+                    android:id="@+id/game_radioButton_gameComm"
+                    style="@style/game_zone_btn_style"
+                    android:background="@drawable/btn_game_zone_right_selector"
+                    android:text="@string/game_commentary"/>
+            </RadioGroup>
+
+            <!-- 史诗推荐中间模块用来显示 游戏详情和评论切换的 那块布局 -->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/game_viewpager_contentContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/game_linearLayout_contentBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_detai_comm"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_you_like"
+                android:textSize="@dimen/font7"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/color18" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#b9d6e4" />
+
+            <GridView
+                android:id="@+id/game_gridview_recomLick"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:horizontalSpacing="8dp"
+                android:numColumns="5" >
+            </GridView>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e6e8ea"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_common_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="9" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="7"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aipay_tv_to_mobile"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="@string/qrcode_scan_from_tv"
+            android:textColor="#282828"
+            android:textSize="16sp" />
+
+       <!--  <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/qrcode_hint_pay"
+            android:textColor="#282828"
+            android:textSize="14sp" /> -->
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/aipay_tv_button_blue_selector"
+            android:text="确定"
+            android:textColor="#7e4900"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

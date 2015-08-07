@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qrcode_choose_dialog_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+         	android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RatingBar
+                android:id="@+id/ratingBar_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/score_rating_bar" />
+
+            <EditText
+                android:id="@+id/edit_score"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/shape_score_dialog_edittext"
+                android:ems="10"
+                android:gravity="top" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_score"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/aipay_tv_btn_cancel_selector"
+                android:text="@string/game_Comment" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

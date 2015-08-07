@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="user_login_frame_layout_weight">11</integer>
+    <integer name="user_login_space_layout_weight">1</integer>
+    <integer name="user_login_btns_layout_weight">5</integer>
+    <integer name="user_login_btns_space_layout_weight">1</integer>
+    <integer name="user_login_input_title_layout_weight">6</integer>
+    <integer name="user_login_input_edit_layout_weight">8</integer>
+    <integer name="user_reg_input_title_layout_weight">13</integer>
+    <integer name="user_reg_input_edit_layout_weight">16</integer>
+</resources>

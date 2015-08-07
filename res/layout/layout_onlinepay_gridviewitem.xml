@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+	<ImageView
+            android:id="@+id/gv_item_icon"
+            android:layout_width="64dp"
+            android:layout_height="84dp"
+            android:scaleType="fitXY">
+
+       </ImageView>
+        <TextView
+        android:id="@+id/gv_item_paytype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gv_item_icon"
+        android:layout_alignLeft="@id/gv_item_icon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_marginTop="1dp"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+		
+</RelativeLayout>

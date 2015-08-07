@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_drawable_bg"
+    android:orientation="horizontal" >
+    <View style="@style/user_frame_space_style"/>
+    <RelativeLayout 
+	    style="@style/user_frame_content_style" >
+    <TextView 
+        android:id="@+id/user_login_title"
+        style="@style/user_title_textStyle"
+        android:text="@string/setting_account_login"/>
+    <LinearLayout 
+        android:id="@+id/user_login_input_username"
+        style="@style/user_input_style"
+        android:layout_below="@id/user_login_title"
+        android:background="@drawable/user_login_input_frame_bg"
+        >
+        <TextView 
+            style="@style/user_input_tv_textStyle"
+            android:text="@string/setting_account_login_username"/>
+        <EditText 
+            style="@style/user_input_et_textStyle"
+            android:hint="@string/setting_account_login_username_hint"
+        	/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_login_input_pwd"
+        style="@style/user_input_style"
+		android:layout_below="@id/user_login_input_username"
+		android:background="@drawable/user_login_input_frame_bg"
+         >
+
+        <TextView
+            style="@style/user_input_tv_textStyle"
+            android:text="@string/setting_account_register_tv_password" />
+
+        <EditText
+            style="@style/user_input_et_textStyle"
+            android:hint="@string/setting_account_register_tv_password_hint" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_login_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/user_twobuttons_margintop"
+        android:layout_marginLeft="@dimen/user_twobuttons_marginleft"
+        android:layout_marginRight="@dimen/user_twobuttons_marginright"
+        android:layout_below="@id/user_login_input_pwd"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/user_loging_btn_reg"
+  			style="@style/user_btn_style"
+            android:gravity="center"
+            android:background="@drawable/user_btn_reg_selector"
+            android:text="@string/start_account_register_btn" />
+        <View 
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="@integer/user_login_btns_space_layout_weight"/>
+
+        <Button
+            android:id="@+id/user_loging_btn_loging"
+            style="@style/user_btn_style"
+            android:background="@drawable/user_btn_login_selector"
+            android:text="@string/start_account_login_btn" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_login_find_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/user_login_btns"
+        android:layout_marginTop="@dimen/user_login_findpwd_tv_margintop"
+        android:layout_marginLeft="@dimen/user_login_findpwd_tv_marginleft"
+        android:layout_marginRight="@dimen/user_login_findpwd_tv_marginright"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textSize="@dimen/user_login_findpwd_tv_textsize"
+        android:textColor="@drawable/user_textview_color"
+        android:gravity="center"
+        android:text="@string/setting_account_findpassword" />
+
+    <!-- <TextView
+        android:id="@+id/user_login_modify_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user_login_find_pwd"
+        android:layout_alignBottom="@+id/user_login_find_pwd"
+        android:textSize="19sp"
+        android:layout_marginRight="20dp"
+        android:textColor="#3c3c3c"
+        android:layout_toLeftOf="@+id/user_login_find_pwd"
+        android:text="修改密码" /> -->
+
+</RelativeLayout>
+    
+    <View style="@style/user_frame_space_style"/>
+    
+</LinearLayout>

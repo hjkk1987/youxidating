@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item type="id" name="main_radio_game_zone">false</item>
+    <item type="id" name="radio_btnRecommend">false</item>
+    <item type="id" name="radio_btnBest">false</item>
+    <item type="id" name="radio_btnSpec">false</item>
+    
+    <item type="id" name="main_radio">false</item>
+    <item type="id" name="radio_but_game_zone">false</item>
+    <item type="id" name="radio_but_square">false</item>
+    <item type="id" name="radio_but_manage">false</item>
+    <item type="id" name="radio_but_user_center">false</item>
+
+    <!-- 史诗推荐 页面出现的空间的id集合 start -->
+    <item type="id" name="imgIconMin">false</item>
+    <item type="id" name="imgAvatar">false</item>
+  
+    <item type="id" name="tvRecommend">false</item>
+    <item type="id" name="tvDownCounts">false</item>
+    <item type="id" name="tvSize">false</item>
+    <item type="id" name="tvStarLevel">false</item>
+    
+    <!-- 评论中的 liseview item 中的textView id-->
+    <item type="id" name="tvName">false</item>
+    <item type="id" name="tvDate">false</item>
+    <item type="id" name="tvCommentWord">false</item>
+    
+    <item type="id" name="radGrpDetailComm">false</item>
+    <item type="id" name="radBtnGameDetail">false</item>
+    <item type="id" name="radBtnComm">false</item>
+     
+    <item type="id" name="imgBtnReturn">false</item>
+    <item type="id" name="imgBtnSearch">false</item>
+    <item type="id" name="imgStars">false</item>
+    <item type="id" name="imgBtnCol">false</item>
+    <item type="id" name="imgBtnDown">false</item>
+    <!-- 史诗推荐id定义 end -->
+    
+    
+</resources>

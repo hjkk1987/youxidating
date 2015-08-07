@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_common_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_gift_maxPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="6" >
+
+            <ImageView
+                android:id="@+id/iv_gift_minPhoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <TextView
+                    android:id="@+id/tv_gift_gameName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="TextView"
+                    android:textColor="#494848"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_gift_nums"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:textColor="#494848"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_down_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:background="@drawable/gift_btn_org_selectoe"
+                android:text="@string/gift_down_game"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/game_gift_divider" />
+
+    <ListView
+        android:id="@+id/giftListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/transparent"
+        android:listSelector="@drawable/transparent" />
+
+</LinearLayout>

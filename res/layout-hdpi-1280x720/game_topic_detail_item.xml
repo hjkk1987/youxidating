@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topic_detail"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/topic_icon"
+                android:layout_width="62dip"
+                android:layout_height="64dip"
+                android:scaleType="fitXY"
+                android:background="@drawable/minphoto"
+                android:layout_alignParentLeft="true"
+               />
+
+            <TextView
+                android:id="@+id/topic_name"
+                style="@style/hot_game_name"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/topic_icon"
+                android:text="@string/tv_softname"/>
+
+            <TextView
+                android:id="@+id/topic_downloadCounts"
+                style="@style/hot_game_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topic_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/topic_icon"/>
+
+            <TextView
+                android:id="@+id/topic_size"
+                style="@style/hot_game_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topic_downloadCounts"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/topic_icon"
+                android:gravity="bottom"/>
+
+            <RatingBar
+                android:id="@+id/topic_barStartLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topic_downloadCounts"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/topic_size"
+                android:isIndicator="true"
+                style="@style/gradeRatingBar"
+                android:max="5"
+                android:numStars="5"
+                android:rating="3" />
+
+            <TextView
+                android:id="@+id/topic_StartLevel"
+                style="@style/hot_game_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topic_downloadCounts"
+                android:gravity="bottom"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/topic_barStartLevel"/>
+
+            <Button
+                android:id="@+id/topic_colletionl"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/topic_icon"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/font2"
+                android:textColor="@color/color5"
+                android:background="@drawable/collection_detail_button" 
+                android:paddingBottom="4dp"
+                android:text="@string/game_manage_savegame"/>
+
+            <Button
+                android:id="@+id/topic_download"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font2"
+                android:gravity="center"
+                android:textColor="@color/color5"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/topic_colletionl"
+                android:layout_alignLeft="@+id/topic_colletionl"
+                android:background="@drawable/collection_detail_button" 
+                android:paddingBottom="4dp"
+                android:text="@string/btn_download_install"/>
+
+        </RelativeLayout>
+    <!-- <LinearLayout
+        android:id="@+id/topic_detail_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rounded_detai_comm"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/imagename"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="@dimen/font4" 
+            
+            android:textColor="@color/color4"/>
+
+        <ImageView
+            android:id="@+id/bigimage"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/maxphoto"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/resumeText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/color5"
+            android:textSize="@dimen/font7"
+            android:lineSpacingMultiplier="1.1"
+            android:layout_marginTop="10dp" />
+        
+    </LinearLayout> -->
+    <com.sxhl.market.view.costom.GameDetailAndComments 
+    	android:id="@+id/detailandcomments"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    >
+	</com.sxhl.market.view.costom.GameDetailAndComments>
+</LinearLayout>

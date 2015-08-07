@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_common_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/usr_username_left_icon"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/etUsername"
+                style="@style/AppearenceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="@string/register_name_digits"
+                android:hint="@string/usr_login_hint_username"
+                android:maxLength="16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/usr_pwd_left_icon"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/etPwd"
+                style="@style/AppearenceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="@string/register_password_digits"
+                android:hint="@string/usr_login_hint_pwd"
+                android:inputType="textPassword"
+                android:maxLength="16" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/AppearenceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_login_bg"
+            android:text="@string/usr_main_login" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal" >
+
+    <include
+        android:id="@+id/mygame_page_cell_include1"
+        style="@style/PageCell.CellNol"
+        layout="@layout/land_mygame_page_cell" />
+
+    <include
+        android:id="@+id/mygame_page_cell_include2"
+        style="@style/PageCell.CellNol"
+        layout="@layout/land_mygame_page_cell" />
+
+    <include
+        android:id="@+id/mygame_page_cell_include3"
+        style="@style/PageCell.CellNol"
+        layout="@layout/land_mygame_page_cell" />
+
+    <include
+        android:id="@+id/mygame_page_cell_include4"
+        style="@style/PageCell.CellLast"
+        layout="@layout/land_mygame_page_cell" />
+
+</LinearLayout>

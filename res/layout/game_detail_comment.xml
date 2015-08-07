@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@drawable/rounded_detai_comm"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/game_radioGroup_detailComm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/game_radioButton_gameDetail"
+            style="@style/game_zone_btn_style"
+            android:background="@drawable/btn_game_zone_left_selector"
+            android:checked="true"
+            android:text="@string/game_game_detail" />
+
+        <RadioButton
+            android:id="@+id/game_radioButton_gameComm"
+            style="@style/game_zone_btn_style"
+            android:background="@drawable/btn_game_zone_right_selector"
+            android:text="@string/game_commentary" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/game_viewpager_contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="330dp" />
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="pay_activity_account_login" type="layout">@layout/pay_layout_tv_activity_account_login</item> 
+</resources>

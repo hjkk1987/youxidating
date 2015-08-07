@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ListView
+    android:id="@+id/topicListView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+   	android:listSelector="@drawable/listview_selector"
+    android:divider="@drawable/list_item_constitution"
+    android:cacheColorHint="#00000000"/>
+   <include
+       android:id="@+id/topicLoadView"
+       layout="@layout/empty_loading"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+</FrameLayout>

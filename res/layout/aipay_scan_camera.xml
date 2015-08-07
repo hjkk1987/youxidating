@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.sxhl.market.QRtools.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_common_header" />
+
+        <Button
+            android:id="@+id/btn_cancel_scan"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/aipay_tv_btn_cancel_selector"
+            android:text="取消"
+            android:textColor="#7e4900"
+            android:textSize="15sp" />
+
+        <!--
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:orientation="vertical" 
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="请将条码置于取景框内扫描"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        -->
+
+    </RelativeLayout>
+
+    <!--
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <TextView
+        	android:id="@+id/preview_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="30dp"
+            android:text="请允许应用访问摄像头权限！"
+            android:textColor="#4fc7ff"
+            android:visibility="gone"
+            android:textSize="16sp" />
+    
+    </RelativeLayout>
+    -->
+
+</FrameLayout>

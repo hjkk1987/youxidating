@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#000000"
+    android:paddingBottom="100dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="100dp" >
+
+    <ImageView
+        android:id="@+id/nf_down_iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/nf_down_downloading" />
+
+    <TextView
+        android:id="@+id/nf_down_tv_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:fadingEdge="none"
+        android:singleLine="true"
+        android:text="50%"
+        android:textColor="#ff8499a1" />
+
+    <TextView
+        android:id="@+id/nf_down_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/nf_down_tv_percent"
+        android:layout_toRightOf="@id/nf_down_iv_icon"
+        android:fadingEdge="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:text="拳皇 下载中..."
+        android:textColor="#ff8499a1"
+        android:textSize="16dp" />
+
+    <ProgressBar
+        android:id="@+id/nf_down_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nf_down_tv_title"
+        android:layout_marginTop="8dp"
+        android:minHeight="10dp"
+        android:progressDrawable="@drawable/progress_horizontal" />
+
+</RelativeLayout>

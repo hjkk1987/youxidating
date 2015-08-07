@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_common_header" >
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_login_et_while"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_login_username" />
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:digits="@string/register_name_digits"
+                    android:hint="@string/user_username_hint"
+                    android:inputType="text"
+                    android:maxLength="16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_login_et_while"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_regist_nickname" />
+
+                <EditText
+                    android:id="@+id/et_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:hint="@string/user_nickname_hint"
+                    android:inputType="text"
+                    android:maxLength="16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_login_et_while"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_regist_mail" />
+
+                <EditText
+                    android:id="@+id/et_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:hint="@string/user_mail_hint"
+                    android:inputType="text"
+                    android:maxLength="35" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_login_et_while"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_regist_phone" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:hint="@string/user_phone_hint"
+                    android:inputType="phone"
+                    android:maxLength="16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_login_et_while"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_login_psd" />
+
+                <EditText
+                    android:id="@+id/et_psd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:digits="@string/register_password_digits"
+                    android:hint="@string/user_psd_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="16" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cbPwdVisible"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:button="@drawable/ico_regist_checkbox_selector"
+                android:text="@string/usr_register_checkbox_label"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_regist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_login_btn_blue_selector"
+                android:padding="15dp"
+                android:text="@string/usr_main_register"
+                android:textColor="#fefefe" >
+            </Button>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/chkBoxClause"
+                    android:layout_width="26dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="0dp"
+                    android:button="@drawable/ico_regist_checkbox_selector"
+                    android:checked="true"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvRead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/usr_register_checkbox_label_read"
+                    android:textColor="@color/color1"
+                    android:textSize="@dimen/font3" />
+
+                <TextView
+                    android:id="@+id/tvLinkTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:text="@string/usr_register_checkbox_label_linkto"
+                    android:textColor="@color/color9"
+                    android:textSize="@dimen/font3" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

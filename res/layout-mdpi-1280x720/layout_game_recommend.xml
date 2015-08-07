@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:padding="3dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bigImage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/maxphoto"
+            android:scaleType="fitXY" />
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/game_layout_rem_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" 
+            android:padding="3dp"
+            >
+            <ImageView
+                android:id="@+id/middleImage1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/middlephoto"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" 
+            android:id="@+id/game_layout_rem_right"
+            android:padding="3dp"
+            >
+            <ImageView
+                android:id="@+id/middleImage2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/middlephoto"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+	</LinearLayout>
+</LinearLayout>

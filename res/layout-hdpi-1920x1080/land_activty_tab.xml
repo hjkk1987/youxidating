@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/land_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/land_radioGroup_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/land_title_bg"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/land_radioBtn_remm"
+                style="@style/land_tab_top_1920x1080_hdpi"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/land_tab_rdibtn_selector"
+                android:checked="true"
+                android:drawableLeft="@drawable/land_rdbtn_recomm_selector"
+                android:drawablePadding="2dp"
+                android:paddingLeft="10dp"
+                android:text="@string/land_recommendation_game" />
+
+            <RadioButton
+                android:id="@+id/land_radioBtn_mygame"
+                style="@style/land_tab_top_1920x1080_hdpi"
+                android:layout_alignBaseline="@+id/land_radioBtn_remm"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/land_radioBtn_remm"
+                android:background="@drawable/land_tab_rdibtn_selector"
+                android:drawableLeft="@drawable/land_rdbtn_mygame_selector"
+                android:drawablePadding="2dp"
+                android:paddingLeft="7dp"
+                android:text="@string/game_manage_mygame" />
+
+            <RadioButton
+                android:id="@+id/land_radioBtn_setup"
+                style="@style/land_tab_top_1920x1080_hdpi"
+                android:layout_alignBaseline="@+id/land_radioBtn_remm"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/land_radioBtn_mygame"
+                android:background="@drawable/land_tab_rdibtn_selector"
+                android:drawableLeft="@drawable/land_rdbtn_setup_selector"
+                android:paddingLeft="12dp"
+                android:text="@string/land_set_up" />
+
+            <RadioButton
+                android:id="@+id/land_radioBtn_market"
+                style="@style/land_tab_top_1920x1080_hdpi"
+                android:layout_alignBaseline="@+id/land_radioBtn_remm"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/land_tab_rdibtn_selector"
+                android:drawableLeft="@drawable/land_rdbtn_mark_selector"
+                android:drawablePadding="2dp"
+                android:paddingLeft="10dp"
+                android:text="@string/market_name" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>

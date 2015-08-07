@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_drawable_bg"
+    android:orientation="horizontal" >
+    <View 
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="@integer/user_login_space_layout_weight"/>
+    <RelativeLayout 
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="@integer/user_login_frame_layout_weight"
+	    android:layout_gravity="center"
+	    android:paddingTop="20dp"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingBottom="20dp"
+	    android:background="@drawable/user_login_frame_bg" >
+    <TextView 
+        android:id="@+id/user_modify_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="#3c3c3c"
+        android:text="@string/setting_account_register_title"/>
+    <LinearLayout 
+        android:id="@+id/user_modify_input_pwd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_modify_title"
+        android:background="@drawable/user_login_input_frame_bg"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_weight="@integer/user_login_input_title_layout_weight"
+            android:textColor="#3c3c3c"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:text="旧密码："/>
+        <EditText 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="请输入原来的密码。"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textColorHint="#cccccc"
+            android:background="@null"
+        	android:layout_weight="@integer/user_login_input_edit_layout_weight"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/user_reg_input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+		android:layout_below="@id/user_modify_input_pwd"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/user_login_input_frame_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/user_login_input_title_layout_weight"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textColor="#3c3c3c"
+            android:gravity="right"
+            android:text="新密码：" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/user_login_input_edit_layout_weight"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textColorHint="#cccccc"
+            android:background="@null"
+            android:hint="请输入新的密码。" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_modify_input_newpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+		android:layout_below="@id/user_modify_input_pwd"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/user_login_input_frame_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/user_login_input_title_layout_weight"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textColor="#3c3c3c"
+            android:gravity="right"
+            android:text="确认密码：" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/user_login_input_edit_layout_weight"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textColorHint="#cccccc"
+            android:background="@null"
+            android:hint="请再次输入密码。" >
+        </EditText>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/user_modify_input_newpwd_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+		android:layout_below="@id/user_modify_input_newpwd"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/user_login_input_frame_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/user_login_input_title_layout_weight"
+            android:textSize="18sp"
+            android:textColor="#3c3c3c"
+            android:singleLine="true"
+            android:gravity="right"
+            android:text="邮箱："/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/user_login_input_edit_layout_weight"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textColorHint="#cccccc"
+            android:background="@null"
+            android:hint="请再次邮箱地址。" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_login_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/user_modify_input_newpwd_confirm"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/user_reg_btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@integer/user_login_btns_layout_weight"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textSize="21sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@drawable/user_btn_confirm_nomal"
+            android:text="确认" />
+        <View 
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="@integer/user_login_btns_space_layout_weight"/>
+
+        <Button
+            android:id="@+id/user_reg_btn_cancle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/user_btn_cancle_nomal"
+            android:layout_weight="@integer/user_login_btns_layout_weight"
+            android:text="取消" />
+    </LinearLayout>
+
+</RelativeLayout>
+    
+    <View 
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="@integer/user_login_space_layout_weight"/>
+    
+</LinearLayout>

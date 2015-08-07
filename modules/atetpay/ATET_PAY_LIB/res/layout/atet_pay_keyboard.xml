@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atet.api.pay.ui.tv.customview.KeyboardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/atet_keyboard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#26292D"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+         />
+
+    <View
+        android:layout_width="match_parent" 
+        android:layout_height="3dp"
+        android:background="#3a566e" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:background="#26292D"  
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key01"
+                    style="@style/atet_pay_keyboard_btn_style"
+                    android:tag="1"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key02"
+                    style="@style/atet_pay_keyboard_btn_style"
+                    android:tag="2"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key03"
+                    style="@style/atet_pay_keyboard_btn_style"
+                    android:tag="3"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key00"
+                    style="@style/atet_pay_keyboard_btn_style"
+                    android:tag="0"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key04"
+                    style="@style/atet_pay_keyboard_btn_style"
+                    android:tag="4"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key05"
+                    style="@style/atet_pay_keyboard_btn_style"
+                    android:tag="5"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key06"
+                    style="@style/atet_pay_keyboard_btn_style"
+                    android:tag="6"
+                    android:text="6" />
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_keydel"
+                    style="@style/atet_pay_keyboard_btn_style_del"
+                    android:tag="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key07"
+                    style="@style/atet_pay_keyboard_btn_style"
+                    android:tag="7"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key08"
+                    style="@style/atet_pay_keyboard_btn_style"
+                    android:tag="8"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key09"
+                    style="@style/atet_pay_keyboard_btn_style"
+                    android:tag="9"
+                    android:text="9" />
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_keyx"
+                    style="@style/atet_pay_keyboard_btn_style"
+                    android:tag="11"
+                    android:text="X" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key_clear"
+                    style="@style/atet_pay_keyboard_btn_style1"
+                    android:tag="12"
+                    android:text="清空" />
+
+                <Button
+                    android:id="@+id/atet_keyboard_btn_key_confirm"
+                    style="@style/atet_pay_keyboard_btn_style1"
+                    android:tag="13"
+                    android:text="完成" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingRight="32dp"
+            android:paddingBottom="32dp" >
+
+            <ImageView
+              android:layout_width="@dimen/common_atet_keyboard_tip_w"
+                android:layout_height="@dimen/common_atet_keyboard_tip_h"
+                android:scaleType="fitXY"
+                android:src="@drawable/atet_keyboard_ok" />
+
+            <ImageView
+              android:layout_width="@dimen/common_atet_keyboard_tip_w"
+                android:layout_height="@dimen/common_atet_keyboard_tip_h"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/atet_keyboard_back" />
+            <ImageView
+                android:layout_width="@dimen/common_atet_keyboard_tip_w"
+                android:layout_height="@dimen/common_atet_keyboard_tip_h"
+                 android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/atet_keyboard_menu" />
+
+        </LinearLayout>
+    </LinearLayout>
+    
+</com.atet.api.pay.ui.tv.customview.KeyboardView> 

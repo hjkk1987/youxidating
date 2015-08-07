@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_common_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 未登录状态 -->
+
+            <LinearLayout
+                android:id="@+id/user_unlogon_part"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rel_lay_login_un"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_usercenter_user_info" >
+
+                    <com.sxhl.market.view.CircularImageView
+                        android:id="@+id/unlogin_user_imgBtn_avator"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ico_default_avavtor" />
+
+                    <TextView
+                        android:id="@+id/unlogin_user_tv_nickname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/unlogin_user_imgBtn_avator"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:text="@string/gift_login_first"
+                        android:textColor="@color/color14"
+                        android:textSize="@dimen/font2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_lay_gift"
+                    style="@style/user_center_layout_style"
+                    android:background="@drawable/lay_user_center_selector2" >
+
+                    <ImageView
+                        android:id="@+id/user_center_gift_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/user_gift" />
+
+                    <ImageView
+                        android:id="@+id/user_center_gift_new_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/user_center_gift_img"
+                        android:layout_alignTop="@id/user_center_gift_img"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/ico_game_update_remind"
+                        android:visibility="gone" />
+
+                    <TextView
+                        style="@style/user_center_text_style"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/user_center_gift_img"
+                        android:text="@string/user_gift" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_lay_setting_un"
+                    style="@style/user_center_layout_style"
+                    android:background="@drawable/lay_user_center_selector3" >
+
+                    <ImageView
+                        android:id="@+id/user_center_setting_un_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/user_setting" />
+
+                    <TextView
+                        style="@style/user_center_text_style"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/user_center_setting_un_img"
+                        android:text="@string/user_setting" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 登录状态 -->
+
+            <LinearLayout
+                android:id="@+id/user_logon_part"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_usercenter_user_info" >
+
+                    <com.sxhl.market.view.CircularImageView
+                        android:id="@+id/user_imgBtn_avator"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ico_default_avavtor"
+                        android:scaleType="fitXY" />
+
+                    <RelativeLayout
+                        android:id="@+id/nickname_part"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/user_imgBtn_avator"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp" >
+
+                        <TextView
+                            android:id="@+id/user_tv_nickname"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:singleLine="true"
+                            android:textColor="@color/color14"
+                            android:textSize="@dimen/font2" />
+
+                        <EditText
+                            android:id="@+id/user_et_nickname"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_user_center_etnickname"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:inputType="text"
+                            android:maxLength="13"
+                            android:singleLine="true"
+                            android:textColor="@color/color14"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/font2" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/user_btn_enable_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/ico_user_center_modify_selector" />
+
+                    <Button
+                        android:id="@+id/user_btn_disable_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/ico_user_center_modify_submit_selector"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/rel_lay_logined_gift"
+                        style="@style/user_center_layout_style"
+                        android:background="@drawable/lay_user_center_selector2" >
+
+                        <ImageView
+                            android:id="@+id/user_login_center_gift_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/user_gift" />
+
+                        <ImageView
+                            android:id="@+id/user_login_center_gift_new_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@id/user_login_center_gift_img"
+                            android:layout_alignTop="@id/user_login_center_gift_img"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/ico_game_update_remind"
+                            android:visibility="gone" />
+
+                        <TextView
+                            style="@style/user_center_text_style"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@id/user_login_center_gift_img"
+                            android:text="@string/user_gift" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_lay_setting"
+                        style="@style/user_center_layout_style"
+                        android:background="@drawable/lay_user_center_selector3" >
+
+                        <ImageView
+                            android:id="@+id/user_center_setting_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/user_setting" />
+
+                        <TextView
+                            style="@style/user_center_text_style"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@id/user_center_setting_img"
+                            android:text="@string/user_setting" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_lay_change_password"
+                        style="@style/user_center_layout_style"
+                        android:background="@drawable/lay_user_center_selector3" >
+
+                        <ImageView
+                            android:id="@+id/rel_lay_modify_psd_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/user_change_psd" />
+
+                        <TextView
+                            style="@style/user_center_text_style"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@id/rel_lay_modify_psd_img"
+                            android:text="@string/user_change_password" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_lay_payonline"
+                        style="@style/user_center_layout_style"
+                        android:background="@drawable/lay_user_center_selector3"
+                        android:visibility="gone" >
+
+                        <TextView
+                            style="@style/user_center_text_style"
+                            android:text="@string/user_online_pay" />
+
+                        <ImageView
+                            style="@style/user_center_arraw_style"
+                            android:src="@drawable/arrow_small" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_login_btn_blue_selector"
+                    android:padding="15dp"
+                    android:text="@string/user_logout"
+                    android:textColor="@color/color14"
+                    android:textSize="@dimen/font4" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

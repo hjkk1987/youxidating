@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal"
+    android:background="#00BFFF"
+    >
+    <Button
+        android:id="@+id/back" 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="返回"
+        android:background="#00BFFF"
+        />
+    <TextView
+        android:id="@+id/set"  
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:layout_gravity="center"
+    	android:gravity="center"
+    	android:layout_weight="1"
+        android:text="普通注册"/>
+    <TextView 
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" />
+</LinearLayout>
+    
+    
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="输入用户名（手机/邮箱）" />
+
+    <EditText
+        android:id="@+id/edit_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+    </EditText>
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center">
+    <CheckBox
+        android:id="@+id/box_provision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox" />
+
+    <TextView
+        android:id="@+id/provision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="同意相关条款" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="提交" />
+
+</LinearLayout>

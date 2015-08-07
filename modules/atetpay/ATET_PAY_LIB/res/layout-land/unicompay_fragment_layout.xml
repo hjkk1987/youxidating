@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_activity_bg_color"
+    android:orientation="vertical"
+    android:padding="@dimen/fragment_common_padding" >
+
+    <ScrollView
+        android:id="@+id/bankcard_fragemnt_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/common_customer_view_include_show_order_unicompay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_customer_view_include_show_order_h"
+                layout="@layout/common_customer_view_show_order" />
+
+            <TextView
+                android:id="@+id/unicompay_fragment_tv_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_customer_view_tv_margintop"
+                android:layout_marginTop="@dimen/common_customer_view_tv_margintop"
+                android:text="@string/unicompay_fragment_tv_tip"
+        android:textSize="@dimen/payfont11" />
+
+            <LinearLayout
+                android:id="@+id/binded_phone_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_customer_view_tv_margintop"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已绑定手机号码： "
+                    android:textSize="@dimen/payfont10" />
+
+                <TextView
+                    android:id="@+id/binded_phone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13812345678"
+                    android:textSize="@dimen/payfont10" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	    <Button
+	        android:id="@+id/unicompay_fragment_btn_sure_pay"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/common_btn_selector"
+	        android:text="@string/unicompay_fragment_btn_sure_pay"
+	        android:layout_weight="1"
+	        android:layout_gravity="bottom"
+	        android:textSize="@dimen/payfont10" />
+	
+	    <Button
+	        android:id="@+id/unicompay_fragment_btn_unbind"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:background="@drawable/common_btn_selector"
+	        android:text="解除绑定"
+	        android:layout_weight="1"
+	        android:layout_gravity="bottom"
+	        android:textSize="@dimen/payfont10" />
+    </LinearLayout>
+
+
+</LinearLayout>

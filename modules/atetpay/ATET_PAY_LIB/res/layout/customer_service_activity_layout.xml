@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.atet.api.pay.ui.phone.customview.PagerSlidingTabStrip
+        android:id="@+id/customer_service_activity_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/customer_service_activity_tabs_h" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/customer_service_activity_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customer_service_activity_tabs" />
+</RelativeLayout>

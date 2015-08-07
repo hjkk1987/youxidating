@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" 
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="头像修改提示"
+            android:textColor="#5f5f5f"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/imgLine"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c1c1c1" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="选择获取头像的方式："
+            android:textColor="#5f5f5f"
+            android:textSize="18sp" />
+        
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:background="@drawable/btn_dialog_cancle_selector"
+                android:text="拍照"
+                android:textColor="#484848"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnPhoto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_dialog_sure_selector"
+                android:text="从相册中获取"
+                android:gravity="center"
+                android:textColor="#f3f3f3"
+                android:textSize="22sp" />
+    </LinearLayout>
+</RelativeLayout>

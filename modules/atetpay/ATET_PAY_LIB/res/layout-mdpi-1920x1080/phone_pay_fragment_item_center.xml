@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/phone_pay_lin_root_center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/phone_pay_fragment_padding"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/phone_pay_fragment_item_iv_center_qrcode"
+            android:layout_width="420dp"
+            android:layout_height="420dp"
+            android:src="@drawable/icon_atet"
+              />
+
+ <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/phone_pay_fragment_margin_left"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:orientation="vertical" >
+         <TextView
+            android:id="@+id/phone_pay_fragment_item_tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋风飞车"
+            android:textSize="@dimen/payfont7" />
+        <TextView
+            android:id="@+id/phone_pay_fragment_item_tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+             android:layout_marginTop="@dimen/phone_pay_fragment_margin_top"
+            android:text="@string/phone_pay_fragment_item_tv_center_icon_up_string"
+            android:textSize="@dimen/payfont5" />
+        
+           </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|left"
+        android:layout_marginLeft="@dimen/phone_pay_fragment_margin_left"
+        android:orientation="vertical" >
+ 
+
+        <TextView
+            android:id="@+id/phone_pay_fragment_item_tv_center_tip_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_pay_fragment_item_tv_center_tip_up_string"
+            android:textSize="@dimen/payfont7" />
+      <TextView
+            android:id="@+id/phone_pay_fragment_item_tv_center_tip_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_pay_fragment_item_tv_center_tip_down_string"
+            android:textSize="@dimen/payfont8" />
+        
+    </LinearLayout>
+
+</LinearLayout>

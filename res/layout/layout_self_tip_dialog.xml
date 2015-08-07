@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    android:paddingBottom="20dp" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#5f5f5f"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/imgLine"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tvTitle"
+        android:background="#c1c1c1" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLine"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#5f5f5f"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCancle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMessage"
+            android:background="@drawable/btn_dialog_cancle_selector"
+            android:gravity="center"
+            android:text="@string/game_self_dialog_btn_cancel"
+            android:textColor="#484848"
+            android:textSize="@dimen/font1" />
+
+        <Button
+            android:id="@+id/btnSure"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_dialog_sure_selector"
+            android:gravity="center"
+            android:text="@string/game_self_dialog_btn_ok"
+            android:textColor="#f3f3f3"
+            android:textSize="@dimen/font1" />
+    </LinearLayout>
+
+</RelativeLayout>

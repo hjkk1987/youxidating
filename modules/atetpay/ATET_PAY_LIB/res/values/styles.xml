@@ -1,0 +1,254 @@
+<resources>
+
+<!--     
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+   
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+       
+    </style>
+
+    Application theme.
+    <style name="AppTheme" parent="AppBaseTheme">
+        All customizations that are NOT specific to a particular API-level can go here.
+    </style> -->
+
+
+<!--     <style name="AppBaseTheme" parent="Theme.AppCompat.Light"></style> -->
+    <style name="AppBaseTheme" parent="android:style/Theme.Holo.Light" />
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+    <!-- main_activity style -->
+    <style name="main_activity_radiobtn_style">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">@dimen/main_activity_radiobtn_h</item>
+        <item name ="android:background">@drawable/main_activity_radiobtn_bg_selector</item>
+        <item name ="android:focusable">true</item>
+        <item name ="android:focusableInTouchMode">true</item>
+        <item name ="android:gravity">center</item>
+        <item name ="android:layout_gravity">center</item>
+        <item name ="android:button">@null</item>
+        <item name ="android:textColor">@color/main_activity_radiobtn_textcolor_selector</item>
+        <item name ="android:textSize">@dimen/payfont8</item>
+    </style>
+     <!-- common_question_fragment style -->
+    <style name="common_question_fragment">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_question_fragment_question_h</item>
+        <item name="android:background">@drawable/main_activity_radiobtn_bg_selector</item>
+        <item name="android:layout_marginTop">@dimen/common_question_fragment_question_margintop</item>
+    </style>
+    <!--  tv-->
+    <!-- Application theme. -->
+    <!-- main_activity -->
+     <style name="main_activity_radiobtn_style_tv">
+        <item name ="android:layout_width">wrap_content</item>
+        <item name ="android:layout_height">@dimen/tv_main_activity_radiobtn_h</item>
+        <item name ="android:background">@drawable/main_activity_tv_radiobtn_bg_selector</item> 
+        <item name ="android:focusable">true</item>
+        <item name ="android:focusableInTouchMode">true</item>
+        <item name ="android:gravity">left|center_vertical</item>
+        <item name ="android:layout_gravity">left</item>
+        <item name ="android:layout_marginTop">@dimen/main_activity_margin_top</item>
+        <item name ="android:button">@null</item>
+        <item name ="android:textSize">@dimen/payfont1</item>
+          <item name ="android:textColor">@color/main_activity_rbtn_text_color</item>
+    </style>
+
+    <style name="bank_pay_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+    
+    
+    <style name="comon_et_style">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">@drawable/account_et_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/payfont9</item>
+        <item name="android:textCursorDrawable" >@drawable/common_edittext_cousor</item>
+    </style>
+    <style name="atet_pay_keyboard_btn_style">
+        <item name="android:layout_width">112dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/atet_pay_keyboard_btn_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/payfont5</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+   
+    <style name="atet_pay_keyboard_btn_style1">
+        <item name="android:layout_width">234dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/atet_pay_keyboard_btn_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/payfont5</item>
+        <item name="android:textColor">#ffffff</item>
+         <item name="android:layout_marginBottom">20dp</item>
+    </style>
+     <style name="atet_pay_keyboard_btn_style_del">
+        <item name="android:layout_width">112dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/atet_pay_keyboard_del_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/payfont5</item>
+        <item name="android:textColor">#ffffff</item>
+    </style> 
+    
+    <!-- user style -->
+    <style name="user_base_input_textStyle">
+        <item name="android:textColor">@color/user_input_text_color</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="user_title_textStyle" parent="user_base_input_textStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/user_title_textsize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="user_input_tv_textStyle" parent="user_base_input_textStyle">
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/user_input_textsize</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/user_input_et_padding</item> 
+        <item name="android:layout_weight">@integer/user_login_input_title_layout_weight</item>
+    </style>
+    <style name="user_input_et_textStyle" parent="user_base_input_textStyle">
+        <item name="android:textSize">@dimen/user_input_textsize</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColorHint">@color/user_input_edit_hint_color</item>
+        <item name="android:background">@drawable/user_input_edit_selector</item>
+        <item name="android:padding">@dimen/user_input_et_padding</item> 
+        <item name="android:layout_weight">@integer/user_login_input_edit_layout_weight</item>
+    </style>
+    <style name="user_input_reg_tv_textStyle" parent="user_base_input_textStyle">
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/user_input_textsize</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/user_input_et_padding</item> 
+        <item name="android:layout_weight">@integer/user_reg_input_title_layout_weight</item>
+    </style>
+    <style name="user_input_reg_et_textStyle" parent="user_base_input_textStyle">
+        <item name="android:textSize">@dimen/user_input_textsize</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColorHint">@color/user_input_edit_hint_color</item>
+        <item name="android:background">@drawable/user_input_edit_selector</item>
+        <item name="android:padding">@dimen/user_input_et_padding</item> 
+        <item name="android:layout_weight">@integer/user_reg_input_edit_layout_weight</item>
+    </style>
+    
+    <style name="user_input_style">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="user_frame_space_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_weight">@integer/user_login_space_layout_weight</item>
+    </style>
+    <style name="user_btn_style">
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textSize">@dimen/user_btn_textsize</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">@integer/user_login_btns_layout_weight</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">@color/user_btn_text_color</item>
+    </style>
+    <style name="user_land_scrollview_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">@integer/user_login_frame_layout_weight</item>
+    </style>
+    <style name="user_frame_content_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">@integer/user_login_frame_layout_weight</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/user_frame_margintop</item>
+        <item name="android:paddingTop">@dimen/user_frame_paddingtop</item>
+        <item name="android:paddingLeft">@dimen/user_frame_paddingleft</item>
+        <item name="android:paddingRight">@dimen/user_frame_paddingright</item>
+        <item name="android:paddingBottom">@dimen/user_frame_paddingbottom</item>
+        <item name="android:background">@drawable/user_login_frame_bg</item>
+   
+        </style><style name="transparent_activity">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowBackground">@color/translucent_background</item>  
+        <item name="android:windowNoTitle">true</item>
+         <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorForeground">#ffff</item>
+
+</style>
+    <style name="Theme.SmoothProgressBarDefaults" parent="android:Theme">
+        <item name="spbStyle">@style/SmoothProgressBar</item>
+    </style>
+
+    <style name="SmoothProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="spb_color">@color/spb_default_color</item>
+        <item name="spb_sections_count">@integer/spb_default_sections_count</item>
+        <item name="spb_speed">@string/spb_default_speed</item>
+        <item name="spb_stroke_width">@dimen/spb_default_stroke_width</item>
+        <item name="spb_stroke_separator_length">@dimen/spb_default_stroke_separator_length</item>
+        <item name="spb_reversed">@bool/spb_default_reversed</item>
+        <item name="spb_mirror_mode">@bool/spb_default_mirror_mode</item>
+        <item name="spb_progressiveStart_activated">@bool/spb_default_progressiveStart_activated</item>
+        <item name="spb_background">@null</item>
+        <item name="spb_generate_background_with_colors">false</item>
+        <item name="spb_gradients">false</item>
+    </style>
+    <style name="ATETSmoothProgressBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_marginRight">@dimen/user_twobuttons_marginright</item>
+        <item name="android:layout_marginLeft">@dimen/user_twobuttons_marginleft</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+    
+    
+       <style name="atet_keyboard_animation">  
+        <item name="android:windowEnterAnimation">@anim/keyborad_open</item>  
+        <item name="android:windowExitAnimation">@anim/keyborad_colse</item>  
+    </style>  
+    
+    
+</resources>

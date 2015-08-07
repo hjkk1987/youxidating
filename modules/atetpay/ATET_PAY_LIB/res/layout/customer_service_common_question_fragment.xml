@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/common_question_fragment_question_padding" >
+
+        <include
+            android:id="@+id/common_question_q1"
+            style="@style/common_question_fragment"
+            layout="@layout/customer_view_show_question" />
+
+        <include
+            android:id="@+id/common_question_q2"
+            style="@style/common_question_fragment"
+            layout="@layout/customer_view_show_question" />
+
+        <include
+            android:id="@+id/common_question_q3"
+            style="@style/common_question_fragment"
+            layout="@layout/customer_view_show_question" />
+
+        <include
+            android:id="@+id/common_question_q4"
+            style="@style/common_question_fragment"
+            layout="@layout/customer_view_show_question" />
+
+        <include
+            android:id="@+id/common_question_q5"
+            style="@style/common_question_fragment"
+            layout="@layout/customer_view_show_question" />
+
+        <include
+            android:id="@+id/common_question_q6"
+            style="@style/common_question_fragment"
+            layout="@layout/customer_view_show_question" />
+
+        <include
+            android:id="@+id/common_question_q7"
+            style="@style/common_question_fragment"
+            layout="@layout/customer_view_show_question" />
+
+        <include
+            android:id="@+id/common_question_q8"
+            style="@style/common_question_fragment"
+            layout="@layout/customer_view_show_question" />
+    </LinearLayout>
+
+</ScrollView>

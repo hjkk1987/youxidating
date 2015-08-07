@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1b1b1c"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aipay_tv_barcode_logo" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#252526"
+            android:gravity="center" 
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aipay_tv_tv_to_mobile" />
+        </LinearLayout>
+
+        
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/aipay_tv_btn_yellow_selector"
+            android:text="确定"
+            android:textColor="#7e4900"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

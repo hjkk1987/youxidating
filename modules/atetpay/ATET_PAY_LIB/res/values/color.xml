@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- phone -->
+    <color name="main_activity_radiogroup_bg_color">#dce1eb</color>
+    <color name="main_activity_radiogbtn_text_normal_color">#348029</color>
+    <color name="main_activity_radiogbtn_text_select_color">#ffffff</color>
+    <color name="main_activity_bg_color">#ffffff</color>
+    <color name="main_activity_radiogroup_bg_color1">#45b035</color>
+    <color name="pager_sliding_tab_pressed_bg">#6633B5E5</color>
+	  <color name="enable_button_text_color">#888888</color>
+    <!-- common_question_fragment -->
+    <color name="common_question_fragment_tv_question_color">#3f3f3f</color>
+    <color name="common_question_fragment_tv_answer_color">#6d6d6d</color>
+    <!-- mian_activity_fragment -->
+    <color name="mian_activity_fragment_price_color">#37802B</color>
+    <color name="mian_activity_fragment_product_user_color">#6d6d6d</color>
+
+    <!-- tv -->
+    <!-- main_activity -->
+    <color name="main_activity_tv_bg_color">#26292D</color>
+    <color name="main_activity_rbtn_text_color">#ffffff</color>
+    <!-- phone_pay_fragment -->
+    <color name="atet_tv_pay_fragment_bg_color">#212121</color>
+    <!-- bank_pay_fragment -->
+    <color name="bank_pay_fragment_tv_product_price_color">#1d1d1d</color>
+    <color name="bind_bank_card_dialog_bg_color">#f1000000</color>
+    
+    <!-- user system -->
+    <color name="user_login_title_color">#3c3c3c</color>
+    <color name="user_input_text_color">#3c3c3c</color>
+    <color name="user_btn_text_color">#ffffff</color>
+    <color name="user_frame_bg_color">#ffffff</color>
+    <color name="user_input_edit_color">#3c3c3c</color>
+    <color name="user_input_edit_hint_color">#cccccc</color>
+    <color name="user_frame_stroke_color">#cccccc</color>
+    <color name="user_input_stroke_color">#cccccc</color>
+    <color name="user_login_log_reg_btn_stroke_color">#cccccc</color>
+    <color name="user_login_log_reg_btn__color">#cccccc</color>
+    <color name="user_login_log__btn__color">#cccccc</color>
+    <color name="user_login_log__btn_stroke__color">#cccccc</color>
+    <color name="user_ok__btn_stroke__color">#cccccc</color>
+    <color name="user_ok__btn__color">#cccccc</color>
+    <color name="user_cancle__btn_stroke__color">#cccccc</color>
+    <color name="user_cancle__btn__color">#cccccc</color>
+
+    
+    <integer-array name="colors">
+        <item>@color/holo_blue_dark</item>
+        <item>@color/holo_yellow_dark</item>
+        <item>@color/holo_green_dark</item>
+        <item>@color/holo_purple_dark</item>
+        <item>@color/holo_red_dark</item>
+    </integer-array>
+
+     <color name="translucent_background">#ee000000</color>
+
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <integer-array name="pocket_bar_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array>
+
+    <integer-array name="pocket_background_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array>
+
+    <color name="pocket_color_1">#85edb9</color>
+    <color name="pocket_color_2">#34bdb7</color>
+    <color name="pocket_color_3">#ee4458</color>
+    <color name="pocket_color_4">#fcb74d</color>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <color name="holo_blue_dark">#0099cc</color>
+    <color name="holo_yellow_dark">#ff8800</color>
+    <color name="holo_green_dark">#669900</color>
+    <color name="holo_purple_dark">#9933cc</color>
+    <color name="holo_red_dark">#cc0000</color>
+    
+
+</resources>

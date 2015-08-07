@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/land_detail_bg"
+    android:weightSum="10"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/land_btn_detail_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/land_detail_game_selector"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/land_btn_return_color"
+            android:textSize="@dimen/font7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/land_game_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/minphoto"
+                android:layout_marginLeft="8dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/land_game_name"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="植物大战僵尸sdfsdfsdgfsdgfdgdfgh"
+                android:gravity="center"
+                android:textColor="@color/color30"
+                android:textSize="@dimen/font2" />
+
+            <Button
+                android:id="@+id/land_btn_game_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                 android:layout_marginLeft="8dp"
+                android:background="@drawable/land_detail_game_selector"
+                android:gravity="center"
+                android:text="@string/down_btn_not_download_only"
+                android:textColor="@color/land_btn_return_color"
+                android:textSize="@dimen/font7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/land_game_development"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="下载次数：5"
+                android:textColor="@color/color31"
+                android:textSize="@dimen/font3" />
+
+            <TextView
+                android:id="@+id/land_game_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="下载次数：5"
+                android:textColor="@color/color31"
+                android:textSize="@dimen/font3" />
+
+            <TextView
+                android:id="@+id/land_game_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="下载次数：5"
+                android:textColor="@color/color31"
+                android:textSize="@dimen/font3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="7.3"
+        android:orientation="vertical" >
+
+        <com.sxhl.market.view.costom.CoverFlowGallery
+            android:id="@+id/land_gallery_detail"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/land_rdbtn_introduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/land_detail_game_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/land_game_introduction"
+                    android:textColor="@color/land_btn_return_color"
+                     android:textSize="@dimen/font7" />
+
+                <RadioButton
+                    android:id="@+id/land_rdbtn_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/land_detail_game_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/land_game_comment"
+                    android:textColor="@color/land_btn_return_color"
+                     android:textSize="@dimen/font7"/>
+            </RadioGroup>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/land_detailgame_viewpager"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" />
+            <!--
+                 <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1.0"
+                android:text="  斯蒂芬金斯蒂芬金四大皆空分析称萨芬科技科斯洛伐零距离斯科拉积分卡lsd房间阿斯洛伐克洛杉矶飞离开撒娇客户对进口萨芬的开发上课"
+                android:textColor="@color/color21"
+                android:textSize="@dimen/font6" />            -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="pay_layout_user_login" type="layout">@layout/pay_layout_tv_user_login</item> 
+    <item name="pay_layout_user_find_pwd" type="layout">@layout/pay_layout_tv_user_find_pwd</item> 
+    <item name="pay_layout_user_register" type="layout">@layout/pay_layout_tv_user_register</item> 
+</resources>

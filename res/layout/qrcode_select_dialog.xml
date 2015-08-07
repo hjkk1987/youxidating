@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/qrcode_choose_dialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dia_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/qr_select_dialog_title"
+        android:textColor="#444444"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dia_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/qr_select_dialog_content"
+        android:textColor="#444444"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btn_qrcode_choose_detial"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/qrcode_dialog_bg_selector"
+            android:gravity="center"
+            android:text="@string/qr_select_dialog_btn_detial"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_qrcode_choose_website"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/qrcode_dialog_bg_selector"
+            android:gravity="center"
+            android:text="@string/qr_select_dialog_btn_website"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

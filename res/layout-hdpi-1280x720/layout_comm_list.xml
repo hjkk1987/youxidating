@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+   
+     <LinearLayout android:id="@+id/list_comment"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+         android:listSelector="#00000000"
+        android:layout_marginBottom="35dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+            
+       </LinearLayout>
+	
+  <!--   <Button
+        android:id="@+id/imgSend"
+        android:layout_width="74dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/game_pronounce"
+        android:textColor="@color/color14"
+        android:background="@drawable/sendcoment_detail_button" /> -->
+    
+    <EditText
+        android:id="@+id/etSend"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+      android:layout_alignParentBottom="true"
+        android:background="@drawable/comment_edit_background"
+        android:maxLength="120"
+        android:paddingLeft="5dp"
+        android:textSize="12sp"
+        android:textColor="#6E6E6E"
+        android:hint="@string/game_spoken"
+        />
+
+
+</RelativeLayout>

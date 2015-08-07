@@ -1,0 +1,48 @@
+<resources>
+
+<dimen name="tv_main_activity_radiobtn_h">90dp</dimen>
+<dimen name="tv_main_activity_title_h">34dp</dimen>
+<dimen name="tv_main_activity_bottom_h">21dp</dimen>
+<dimen name="bank_pay_fragment_btn_add_bank_card_w">400dp</dimen>
+<dimen name="bank_pay_fragment_dialog_w">640dp</dimen>
+<dimen name="bank_pay_fragment_dedt_bank_card_w">267dp</dimen>
+
+<dimen name="bank_pay_fragment_dedt_bank_card_h">45dp</dimen>
+<dimen name="bank_pay_fragment_btn_add_bank_card_sure_h">45dp</dimen>
+
+<dimen name="bank_pay_fragment_btn_add_bank_card_sure_w">90dp</dimen>
+
+
+<dimen name="phone_pay_fragment_qrcode_w_h">178dp</dimen>
+<dimen name="bank_pay_fragment_padding">10dp</dimen>
+<dimen name="phone_pay_fragment_lin_margin_left">21dp</dimen>
+<dimen name="phone_pay_fragment_lin_margin_top">21dp</dimen>
+<dimen name="unicom_pay_fragment_margin_top">21dp</dimen>
+<dimen name="unicom_pay_fragment_margin_left">21dp</dimen>
+<dimen name="unicom_pay_fragment_padding_bottom">21dp</dimen>
+<dimen name="bank_pay_fragment_margin_left">21dp</dimen>
+<dimen name="bank_pay_fragment_lin_h">99dp</dimen>
+<dimen name="tv_bank_pay_fragment_game_icon_w_h">89dp</dimen>
+<dimen name="tv_bank_pay_fragment_privce_bg_w">172dp</dimen>
+<dimen name="tv_bank_pay_fragment_privce_bg_h">91dp</dimen>
+<dimen name="unicom_pay_fragment_lin_unbind_h">107dp</dimen>
+<dimen name="bank_pay_fragment_lin_margin_top">10dp</dimen>
+<dimen name="bank_pay_fragment_bottom_icon">27dp</dimen>
+<dimen name="bank_pay_fragment_bottom_bank_h">27dp</dimen>
+<dimen name="bank_pay_fragment_bottom_phone_h">16dp</dimen>
+<dimen name="unicom_pay_fragment_phone_icon_w_h">24dp</dimen>
+<dimen name="phone_pay_fragment_iv_title_bar_h">99dp</dimen>
+<dimen name="phone_pay_fragment_iv_a_ok_w">49dp</dimen>
+<dimen name="phone_pay_fragment_iv_a_ok_h">21dp</dimen>
+<dimen name="tv_main_activity_title_w">313dp</dimen>
+<dimen name="tv_main_activity_bottom_w">385dp</dimen>
+<dimen name="phone_pay_fragment_iv_title_margin_top">7dp</dimen>
+<dimen name="common_dialog_padding_left">32dp</dimen>
+<dimen name="common_dialog_padding_right">32dp</dimen>
+<dimen name="common_dialog_padding_bottom">32dp</dimen>
+<dimen name="common_dialog_padding_top">32dp</dimen>
+<dimen name="main_activity_margin_top">16dp</dimen>  
+<dimen name="unicom_pay_fragment_lin_bind_margin_top">32dp</dimen>  
+<dimen name="phonenumber_manager_activity_btn_countdown_w">120dp</dimen>
+
+</resources>

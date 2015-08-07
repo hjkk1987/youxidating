@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/atet_tv_pay_fragment_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/phone_pay_fragment_iv_title_margin_top" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/phone_pay_fragment_iv_title_bar_h"
+            android:src="@drawable/tv_phone_pay_fragment_iv_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/phone_pay_fragment_lin_margin_top"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/phone_pay_fragment_lin_left"
+            android:layout_width="@dimen/phone_pay_fragment_select_w"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/phone_pay_fragment_lin_margin_left"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <include layout="@layout/phone_pay_fragment_item_left" >
+            </include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone_pay_fragment_lin_center"
+            android:layout_width="@dimen/phone_pay_fragment_nor_w"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/phone_pay_fragment_lin_margin_left"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <include layout="@layout/phone_pay_fragment_item_center" >
+            </include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone_pay_fragment_lin_right"
+            android:layout_width="@dimen/phone_pay_fragment_nor_w"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/phone_pay_fragment_lin_margin_left"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center" >
+
+            <include layout="@layout/phone_pay_fragment_item_right" >
+            </include>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bank_pay_fragment_bottom_bank_h"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/bank_pay_fragment_margin_left"
+        android:layout_marginLeft="@dimen/bank_pay_fragment_margin_left"
+        android:layout_marginRight="@dimen/bank_pay_fragment_margin_left"
+        android:layout_marginTop="@dimen/bank_pay_fragment_lin_margin_top"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/bank_pay_fragment_bottom_phone_h"
+            android:layout_gravity="center"
+            android:src="@drawable/phone_pay_fragment_tv_bottom_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/bank_pay_fragment_drawable_padding"
+            android:text="@string/phone_pay_fragment_tv_custom_service_tip"
+            android:textColor="@color/main_activity_rbtn_text_color"
+            android:textSize="@dimen/payfont7" />
+    </LinearLayout>
+
+</LinearLayout>

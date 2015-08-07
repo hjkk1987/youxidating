@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="keywords">
+        <item>三国杀</item>
+        <item>麻将</item>
+        <item>仙剑奇缘</item>
+        <item>滑雪大冒险</item>
+        <item>崩坏学园</item>
+        <item>搞怪大富翁</item>
+        <item>魂斗士</item>
+        <item>阿喵阿汪</item>
+        <item>三国</item>
+        <item>真三国快打</item>
+        <item>大侠去哪儿</item>
+        <item>波克麻将</item>
+        <item>新梦幻之城</item>
+        <item>火拼双扣</item>
+        <item>仙战</item>
+        <item>囧西游</item>
+        <item>神魔大陆</item>
+        <item>愤怒的小鸟</item>
+        <item>黑暗战神</item>
+        <item>忍者必须死</item>
+    </string-array>
+
+</resources>

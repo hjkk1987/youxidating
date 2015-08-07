@@ -1,0 +1,363 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sxhl.market"
+    android:versionCode="40"
+    android:versionName="3.7.10" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- bank -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- sms pay -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" >
+    </uses-permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.sxhl.market.app.BaseApplication"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".control.common.activity.MainTabActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@style/ThemeStart"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".control.common.activity.MainLauncherActivity"
+            android:icon="@drawable/app_icon"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor"
+            android:theme="@style/SecondStart"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".control.common.activity.QrcodeLauncherActivity"
+            android:icon="@drawable/pocket_atet"
+            android:label="@string/secong_launcher"
+            android:launchMode="singleInstance"
+            android:screenOrientation="nosensor"
+            android:theme="@style/SecondStart" >
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".control.common.activity.WelcomeActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".control.user.activity.ChangeLoginActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".control.user.activity.NewLoginAndRegisterActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".control.user.activity.NewRegisterActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".control.user.activity.FindPsdActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".control.game.activity.CommDetailActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".control.game.activity.GameZoneActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".control.manage.activity.MyGameActivity"
+            android:label="MyGame"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".control.game.activity.SearchActivity"
+            android:label="Search"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.game.activity.GameTopicDetailActivity"
+            android:label="GameTopicDetail"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.AdviceFeedbackActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.SettingActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.LogouttedActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.LoginOrRegisterActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.CommonRegisterActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.UserCentreActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.ChangePasswordActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.UserCenterLoginedActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.StipulationActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.GiftPackageActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.GiftListActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.MyGiftDetailActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.game.activity.SearchResultActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".control.user.activity.OnlinePayActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+
+        <!-- login / register activity -->
+        <activity
+            android:name=".control.user.activity.LoginActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".control.user.activity.RegisterActivity"
+            android:screenOrientation="nosensor" />
+
+        <!-- land/activity -->
+        <activity
+            android:name=".QRtools.activity.CaptureActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name=".QRtools.activity.GuidePaymentActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity android:name=".QRtools.activity.ResActivity" >
+        </activity>
+        <activity
+            android:name=".control.manage.activity.AddAppActivity"
+            android:screenOrientation="nosensor" />
+
+        <service android:name="com.sxhl.statistics.services.GameCollectService" >
+        </service>
+        <service android:name="com.sxhl.statistics.services.UpdateHardwareService" >
+        </service>
+        <service android:name="com.sxhl.statistics.services.PlatFormOnlineService" >
+        </service>
+        <service android:name="com.sxhl.statistics.services.UploadPlatFormTimeInfoService" >
+        </service>
+        <service android:name="com.sxhl.statistics.services.StatisticsGameOnlineService" >
+        </service>
+        <service android:name="com.sxhl.statistics.services.UploadGameOnlineService" >
+        </service>
+        <service android:name="com.sxhl.statistics.services.AutoService" >
+            <intent-filter>
+                <action android:name="com.sxhl.services.bootservice" >
+                </action>
+            </intent-filter>
+        </service>
+        <service android:name="com.sxhl.market.service.HandleService" />
+
+        <receiver
+            android:name="com.sxhl.market.receiver.InstallReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sxhl.statistics.receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sxhl.statistics.receiver.NetConnectChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.BReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!--
+                 <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="com.sxhl.market.launcher_main" />
+            </intent-filter>
+            <!--
+                 <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED" />
+            </intent-filter>
+            -->
+        </receiver>
+
+        <!-- <service android:name=".service.ControllerService" /> -->
+
+        <provider
+            android:name="com.sxhl.market.contentprovider.MyGameProvider"
+            android:authorities="com.sxhl.market.provider"
+            android:exported="true" >
+        </provider>
+        
+         <!-- 支付相关sdk -->
+      
+       <activity
+            android:name="com.atet.api.pay.ui.phone.activity.MainActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+            android:label="AtetPayMobile"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+		    android:screenOrientation="nosensor"
+            android:logo="@drawable/actionbar_back_btn_selector" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.phone.activity.CustomerServiceActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+		    android:configChanges="keyboard|keyboardHidden"
+		    android:screenOrientation="nosensor"
+		    android:logo="@drawable/actionbar_back_btn_selector" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.phone.activity.PhoneNumberManagerActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+		    android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+		    android:screenOrientation="sensor"
+		    android:logo="@drawable/actionbar_back_btn_selector" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.tv.activity.MainActivity"
+		    android:theme="@style/android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:label="AtetPayTv"
+		    android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+		<activity
+            android:name="com.atet.api.pay.ui.tv.activity.BindBankCardActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+	    	android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+	        android:theme="@style/transparent_activity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.atet.api.pay.ui.InitActivity"
+		    android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+        
+        <!-- 登录相关 -->
+        <activity android:name="com.atet.api.pay.ui.tv.login.AccountLoginActivity" 
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.atet.api.pay.ui.tv.login.AccountInfoUpdateActivty"
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.atet.api.pay.ui.tv.login.AccountRegisterActivity"
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.atet.api.pay.ui.tv.login.FindPassWordActivity"
+			android:configChanges="keyboard|keyboardHidden"
+			android:screenOrientation="sensor"
+        	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>  
+        	
+        <!-- 支付宝 -->
+		<activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <service
+            android:name="com.atet.api.pay.ui.service.AtetPayService">
+            <intent-filter>
+                <action android:name="com.atet.api.pay.ui.service.IAtetPayService" />
+            </intent-filter>
+        </service>
+        
+    </application>
+
+</manifest>

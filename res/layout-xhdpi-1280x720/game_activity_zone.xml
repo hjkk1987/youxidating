@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:paddingBottom="10dp"
+    android:background="@drawable/common_bg">
+	<include  layout="@layout/layout_common_header"/>
+    <RadioGroup
+        android:id="@+id/game_radioGroup_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <RadioButton
+           android:id="@+id/game_radioButton_recommend"
+            style="@style/game_zone_btn_style"
+            android:text="@string/game_epic_recommend" 
+            android:background="@drawable/btn_game_zone_left_selector"/>
+        <RadioButton
+            android:id="@+id/game_radioButton_best"
+            style="@style/game_zone_btn_style"
+            android:text="@string/game_best_game" 
+            android:background="@drawable/btn_game_zone_middle_selector"/>
+        <RadioButton
+            android:id="@+id/game_radioButton_spec"
+            style="@style/game_zone_btn_style"
+            android:text="@string/game_game_special" 
+            android:background="@drawable/btn_game_zone_right_selector"
+            />
+    </RadioGroup>
+    
+       <android.support.v4.view.ViewPager
+           android:id="@+id/game_viewpager_zone"
+     	    android:layout_width="match_parent"
+     	    android:layout_height="0dp"
+     	    android:layout_weight="1.0"/>
+
+       
+</LinearLayout>

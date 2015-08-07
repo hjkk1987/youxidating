@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/square_backgroud" >
+
+        <Button
+            android:id="@+id/imageView1"
+            android:layout_width="122dp"
+            android:layout_height="160dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/square_six" />
+
+        <Button
+            android:id="@+id/imgStrategy"
+            android:layout_width="268dp"
+            android:layout_height="248dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_square_one_sel" />
+         <Button
+            android:id="@+id/button2"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/imgRelaxPart"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/square_bg"
+            android:text="@string/square_fantastic_story"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/font10" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/imgSquarePart"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/square_bg"
+            android:text="@string/square_fashion_philosopher"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/font10" />
+
+        <Button
+            android:id="@+id/button4"
+          android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginLeft="99dp"
+            android:layout_marginTop="62dp"
+            android:background="@drawable/square_bg"
+            android:gravity="center"
+            android:text="@string/square_game_attackstrategy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font10" />
+
+        <Button
+            android:id="@+id/imgRelaxPart"
+           android:layout_width="168dp"
+            android:layout_height="246dp"
+            android:layout_above="@+id/imgHotTopic"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_square_three_sel" />
+
+        <Button
+            android:id="@+id/button1"
+       		android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/imgHotTopic"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/square_bg"
+            android:gravity="center"
+            android:text="@string/square_notice_board"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font10" />
+
+        <Button
+            android:id="@+id/imgSquarePart"
+            android:layout_width="168dp"
+            android:layout_height="246dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imgStrategy"
+            android:layout_marginRight="90dp"
+            android:background="@drawable/btn_square_two_sel" />
+
+        <Button
+            android:id="@+id/imgHotTopic"
+            android:layout_width="258dp"
+            android:layout_height="254dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="91dp"
+            android:background="@drawable/btn_square_four_sel" />
+
+    </RelativeLayout>
+
+</LinearLayout>

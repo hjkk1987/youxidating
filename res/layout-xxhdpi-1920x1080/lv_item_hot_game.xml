@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_selector"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/gameIcon"
+        android:layout_width="56dip"
+        android:layout_height="56dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/minphoto"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/arrowIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/arrow_small" />
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@+id/arrowIcon"
+        android:layout_toRightOf="@id/gameIcon"
+        android:gravity="center_vertical"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/startLevelTV"
+            style="@style/hot_game_text_1080_1920_mdpi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="4dp"
+            android:text="9.0分" />
+
+        <RatingBar
+            android:id="@+id/startLevelRatingBar"
+            style="@style/gradeRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:layout_toLeftOf="@id/startLevelTV"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="5" />
+
+        <TextView
+            android:id="@+id/gameName"
+            style="@style/hot_game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="7dp"
+            android:layout_toLeftOf="@+id/startLevelRatingBar"
+            android:singleLine="true"
+            android:text="德州扑克" />
+
+        <TextView
+            android:id="@+id/gameSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/gameName"
+            android:layout_marginBottom="3dp"
+            android:text="10.2MB"
+            android:textColor="@color/color5"
+            android:textSize="@dimen/font7" />
+
+        <TextView
+            android:id="@+id/downTimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/gameSize"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/gameSize"
+            android:text="120次下载"
+            android:textColor="@color/color5"
+            android:textSize="@dimen/font7" />
+    </RelativeLayout>
+
+</RelativeLayout>

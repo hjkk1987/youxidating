@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_common_header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+       <!--  <include
+            android:id="@+id/game_layout_detail_load"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/empty_loading"
+            android:visibility="gone" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/game_layout_detail_game_topic_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/game_topic_detail_list_header" />
+
+            <!-- <com.sxhl.market.view.PullDownView
+                android:id="@+id/game_lv_gameTopic"
+                android:layout_width="match_parent"
+    			android:layout_height="match_parent" 
+                /> -->
+                <FrameLayout 
+                    android:id="@+id/game_lv_gameTopic"
+                    android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                    >
+                    
+                </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

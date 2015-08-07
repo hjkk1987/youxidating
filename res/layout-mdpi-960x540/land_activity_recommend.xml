@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1.0" >
+
+            <com.sxhl.market.view.costom.CustomGallery
+                android:id="@+id/land_gallery_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/land_recommend_indexviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/land_layout_hotlist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/land_chosen_game"
+                android:textColor="@color/color27"
+                android:textSize="@dimen/font3" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/land_chosen_head" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/land_layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/empty_loading" />
+
+</FrameLayout>
